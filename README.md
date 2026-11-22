@@ -4,7 +4,7 @@
 
 PaintManager is a Lua mod for **The Last Caretaker**. See which paints you own, learn recipes from the cans you have collected, and save paint schemes for your ship and character.
 
-**[Download the latest mod ZIP](https://github.com/umanamente/tlc-paint-manager-mod/releases/latest)** · [Installation guide](docs/gamers/installation.md)
+[<img src="https://images.nexusmods.com/favicons/ReskinOrange/favicon-32x32.png" alt="" width="18" height="18"> **Nexus Mods**](https://www.nexusmods.com/thelastcaretaker/mods/449) · **[Download the latest mod ZIP](https://github.com/umanamente/tlc-paint-manager-mod/releases/latest)** · [Installation guide](docs/gamers/installation.md)
 
 ## First use
 

@@ -24,13 +24,40 @@ class I18nTests(unittest.TestCase):
         self.lua.execute('''
             local languages=require("paintmanager.languages")
             assert(not languages.valid(nil) and languages.resolve(nil,"ru-RU")=="ru")
-            assert(languages.resolve("auto","RU_ru")=="ru" and languages.resolve("auto","de-DE")=="en")
+            assert(languages.resolve("auto","RU_ru")=="ru" and languages.resolve("auto","de-DE")=="de")
             assert(languages.resolve("ru",nil)=="ru" and languages.resolve("en","ru")=="en")
             assert(messages.select("auto","ru-RU"))
             local revision=messages.revision
             assert(messages.text("ui.settings.language_name")==messages.language_name("ru"))
             assert(not messages.select("ru","en") and messages.revision==revision)
             assert(messages.select("en","ru") and messages.text("ui.settings.language_name")=="English")
+        ''')
+
+    def test_installed_game_tags_and_platform_variants_follow_the_expected_catalog(self):
+        resolve = self.lua.eval('require("paintmanager.languages").resolve')
+        for game_tag, code in {
+            "es": "es-ES", "es_ES": "es-ES", "ES_419": "es-419", "es-MX": "es-419",
+            "es-Latn-AR": "es-419", "pt": "pt-BR", "pt_BR": "pt-BR", "fr-CA": "fr",
+            "sv": "sv-FI", "sv_FI": "sv-FI", "fi-FI": "fi", "uk-UA": "uk", "it-IT": "it",
+            "pl-PL": "pl", "ja-JP": "ja", "zh": "zh-Hans", "ZH_cn": "zh-Hans",
+            "zh-Hans-CN": "zh-Hans", "zh-Hant-TW": "en", "zh-TW": "en", "ko-KR": "en",
+        }.items():
+            with self.subTest(game_tag=game_tag):
+                self.assertEqual(resolve("auto", game_tag), code)
+                self.assertEqual(resolve("ru", game_tag), "ru")
+
+    def test_language_picker_names_only_load_the_selected_message_catalog(self):
+        self.lua.execute('''
+            local languages=require("paintmanager.languages")
+            for _,code in ipairs(languages.choices) do
+                if code~="auto" then
+                    assert(#messages.language_name(code)>0)
+                    assert(not package.loaded["paintmanager.locales."..code])
+                end
+            end
+            messages.select("auto","zh-CN")
+            assert(package.loaded["paintmanager.locales.zh-Hans"])
+            assert(not package.loaded["paintmanager.locales.ja"])
         ''')
 
     def test_english_and_russian_integer_plural_rules_with_english_fallback(self):

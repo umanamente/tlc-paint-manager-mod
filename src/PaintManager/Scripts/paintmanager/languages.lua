@@ -1,5 +1,20 @@
--- Stable preference values. Order here is also the order of the language picker.
-local M = { choices = { "auto", "en", "ru" }, game_revision = 0 }
+-- Stable preference values and compact picker metadata. Load message text on selection.
+local M = { choices = { "auto", "en" }, game_revision = 0, locales = {} }
+local tags = { en = "en" }
+for _, locale in ipairs(require("paintmanager.locales.index")) do
+    M.choices[#M.choices + 1] = locale.code
+    M.locales[locale.code] = locale
+    tags[locale.code:lower()] = locale.code
+end
+
+-- The game's regional catalogs also serve common platform culture tags.
+tags.es, tags.pt, tags.sv = "es-ES", "pt-BR", "sv-FI"
+for region in ("ar bo cl co cr cu do ec gt hn mx ni pa pe pr py sv us uy ve"):gmatch("%S+") do
+    tags["es-" .. region] = "es-419"
+end
+tags.zh, tags["zh-cn"], tags["zh-sg"], tags["zh-chs"] = "zh-Hans", "zh-Hans", "zh-Hans", "zh-Hans"
+-- Traditional Chinese has no native translation in this build.
+tags["zh-hant"], tags["zh-tw"], tags["zh-hk"], tags["zh-mo"], tags["zh-cht"] = "en", "en", "en", "en", "en"
 
 -- Native FText follows the game even when the mod's own controls use an override.
 function M.observe_game(tag)
@@ -18,8 +33,9 @@ end
 function M.resolve(preference, game_tag)
     if preference ~= "auto" and M.valid(preference) then return preference end
     local tag = type(game_tag) == "string" and game_tag:lower():gsub("_", "-") or ""
+    tag = tag:gsub("^es%-latn%-", "es-")
     while tag ~= "" do
-        if tag ~= "auto" and M.valid(tag) then return tag end
+        if tags[tag] then return tags[tag] end
         tag = tag:match("^(.*)%-[^-]+$") or ""
     end
     return "en"

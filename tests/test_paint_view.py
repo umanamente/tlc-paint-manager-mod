@@ -115,13 +115,13 @@ class PaintViewTests(unittest.TestCase):
             assert(#run(options("all",nil,".*")).rows==0)
         ''')
 
-    def test_utf8_bytes_are_preserved_without_claiming_unicode_case_folding(self):
+    def test_search_handles_accented_case_and_native_display_names(self):
         self.lua.globals().native_name = "\u041a\u0440\u0430\u0441\u043a\u0430"
         self.run_lua('''
             model.rows={row("accent","Café sea",4,"locked"),row("cyrillic",native_name,4,"locked")}
             assert(ids(run(options("all",nil,"Café")).rows)=="accent")
             assert(ids(run(options("all",nil,native_name)).rows)=="cyrillic")
-            assert(#run(options("all",nil,"CAFÉ")).rows==0)
+            assert(ids(run(options("all",nil,"CAFÉ")).rows)=="accent")
         ''')
 
     def test_four_sort_orders_and_deterministic_name_id_ties(self):

@@ -26,12 +26,19 @@ local function check_override(key, value)
     for name in pairs(actual) do assert(expected[name], "Unexpected translation placeholder: " .. key .. "." .. name) end
 end
 
-local function plural_form(language, count)
+local one_other = { "one", "other" }
+local one_few_many = { "one", "few", "many" }
+local forms = { one_other = one_other, zero_one = one_other, invariant = { "other" },
+    polish = one_few_many, east_slavic = one_few_many }
+
+local function plural_form(rule, count)
     count = tonumber(count)
-    if language ~= "ru" then return count == 1 and "one" or "other" end
+    if rule == "invariant" then return "other" end
+    if rule == "one_other" then return count == 1 and "one" or "other" end
+    if rule == "zero_one" then return (count == 0 or count == 1) and "one" or "other" end
     if not count or count % 1 ~= 0 then return "many" end
     local last, two = math.abs(count) % 10, math.abs(count) % 100
-    if last == 1 and two ~= 11 then return "one" end
+    if count == 1 or (rule == "east_slavic" and last == 1 and two ~= 11) then return "one" end
     if last >= 2 and last <= 4 and (two < 12 or two > 14) then return "few" end
     return "many"
 end
@@ -39,11 +46,13 @@ end
 -- A partial translation falls back to English per key, including English plural rules.
 function M.new(overrides, language)
     local selected = {}
+    local locale = languages.locales[language]
+    local rule = locale and locale.rule or "one_other"
     for key, value in pairs(overrides or {}) do
         if type(value) == "table" then
             assert(plurals[key], "Unexpected plural translation: " .. key)
             local copy = {}
-            for _, form in ipairs(language == "ru" and {"one", "few", "many"} or {"one", "other"}) do
+            for _, form in ipairs(forms[rule]) do
                 check_override(key, value[form])
                 copy[form] = value[form]
             end
@@ -61,8 +70,8 @@ function M.new(overrides, language)
             local template = selected[key]
             local plural = plurals[key]
             if type(template) == "table" then
-                template = template[plural_form(language, values[plural.count])]
-            elseif not template and plural and plural_form("en", values[plural.count]) == "one" then
+                template = template[plural_form(rule, values[plural.count])]
+            elseif not template and plural and plural_form("one_other", values[plural.count]) == "one" then
                 template = plural.one
             end
             local rendered = (template or fallback):gsub("{([%a_][%w_]*)}", function(name)
@@ -91,7 +100,10 @@ function M.select(preference, game_tag)
     return true
 end
 
-function M.language_name(code) return catalog(code).text("ui.settings.language_name") end
+function M.language_name(code)
+    if code == "en" then return english["ui.settings.language_name"] end
+    return languages.locales[code].name
+end
 function M.text(key, values) return catalogs[M.language].text(key, values) end
 
 -- Return a copy so validation tooling cannot mutate the runtime fallback.

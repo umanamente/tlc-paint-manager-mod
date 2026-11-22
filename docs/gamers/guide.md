@@ -25,6 +25,10 @@ Your account library stores presets and preferences locally. An ordinary game sa
 
 ## Language
 
-In **Settings → PaintManager language**, choose **Follow game language**, **English** or **Russian**. When a translation is unavailable, the mod uses English. Item names come from the game. Developer tools and diagnostic output can appear in English.
+PaintManager starts with **Follow game language**. To use a different language for the mod, open **Settings → PaintManager language** and select the language by its own name. The choice is saved with your preferences. Choose **Follow game language** to switch back. Paint names follow the game's language, and your saved paint schemes keep the names you gave them.
+
+PaintManager supports all 12 interface languages listed on Steam. These are English, French, German, Italian, Japanese, Polish, Brazilian Portuguese, Russian, Simplified Chinese, Spanish (Spain), Spanish (Latin America) and Ukrainian. Both Spanish translations have their own buttons, **Español (España)** and **Español (Latinoamérica)**. [The Last Caretaker on Steam](https://store.steampowered.com/app/1783560/The_Last_Caretaker/?l=english)
+
+PaintManager also offers Finnish (**Suomi**) and Swedish as used in Finland (**Svenska (Finland)**). The reference game build includes localization resources for both. If the game language has no matching translation, PaintManager uses English. Developer tools and diagnostic output can appear in English.
 
 [Troubleshooting](troubleshooting.md)

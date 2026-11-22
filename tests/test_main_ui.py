@@ -272,7 +272,8 @@ class MainUiTests(unittest.TestCase):
             restore("en");language="ru-RU";step();assert(messages.language=="en")
             restore("auto");assert(messages.language=="ru")
             language=nil;step();step();assert(messages.language=="ru")
-            language="de-DE";step();step();assert(messages.language=="en")
+            language="de-DE";step();step();assert(messages.language=="de")
+            language="ko-KR";step();step();assert(messages.language=="en")
             language="en-US";restore("ru");step();assert(messages.language=="ru" and not bad_thread)
         ''')
 

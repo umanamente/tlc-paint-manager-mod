@@ -17,7 +17,7 @@ PaintManager is a Lua mod for **The Last Caretaker**. See which paints you own, 
 | Find a paint | Browse **Learned**, **Can Learn** or **Need Cans**. Search by the paint's in-game name. |
 | Fill your backpack | Select a color and top it up to a chosen total. You can also gather all colors that fit and return borrowed paint to its original boxes. |
 | Keep a paint scheme | Open **Presets** and choose **Ship** or **Character**. Save the current layout, preview another one or apply it with physical cans. |
-| Adjust the interface | Open **Settings** to choose a ship radius, backpack target, deposit options or interface language. English and Russian are available. |
+| Adjust the interface | Open **Settings** to choose a ship radius, backpack target or deposit options. PaintManager follows the game language by default. You can also choose from [14 interface languages](docs/gamers/guide.md#language). |
 
 ![A ship, a lost-signal indicator and a Caretaker](src/PaintManager/Assets/UI/Illustrations/signal_lost.png)
 

@@ -479,7 +479,15 @@ class UIPlayerTests(unittest.TestCase):
         page("learned");assert(paint_names()=="Amber|Zero known")
         page("ready");page("missing");page("learned")
         assert(binding_count()==fixed and #commands==0 and #learned==0 and bulk_learned==0)
-        page("settings");click(messages.text("ui.settings.language_auto"))
+        page("settings")
+        for _,code in ipairs(require("paintmanager.languages").choices) do
+            if code~="auto" then
+                click(messages.language_name(code))
+                assert(messages.language==code and ui.preferences.uiLanguage==code)
+                assert(ui.tab_controls.settings.label.text==messages.text("ui.tab.settings"))
+            end
+        end
+        click(messages.text("ui.settings.language_auto"))
         assert(ui.preferences.uiLanguage=="auto" and messages.language=="en" and ui.host==host)
         game_language="ru-RU";messages.select("auto",game_language);ui:tick()
         assert(ui.tab_controls.settings.label.text==messages.text("ui.tab.settings"))

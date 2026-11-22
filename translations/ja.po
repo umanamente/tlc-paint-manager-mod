@@ -1,0 +1,1738 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PaintManager\n"
+"PO-Revision-Date: 2026-11-22 00:00-0800\n"
+"Last-Translator: PaintManager contributors\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Status-line action name for opening, closing or refreshing the mod window.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:5 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.command.window"
+msgid "PaintManager window"
+msgstr "PaintManagerウィンドウ"
+
+#. Status-line action name while saving or applying the player's preferences.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:7 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.command.preferences"
+msgid "Settings"
+msgstr "設定"
+
+#. General status-line action name when the underlying command has no player-visible name.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:9 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.command.task"
+msgid "PaintManager action"
+msgstr "PaintManagerの操作"
+
+#. Label for the language selector in the mod's Settings. It controls messages written by PaintManager.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:11 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.language"
+msgid "PaintManager language"
+msgstr "PaintManagerの表示言語"
+
+#. Default option in the language selector. Use the language of the game's interface when available and otherwise show English.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:13 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.language_auto"
+msgid "Follow game language"
+msgstr "ゲームの言語に合わせる"
+
+#. Name of this translation in its own language. The Settings selector shows this name even when the rest of the interface is in a different language.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:15 src/PaintManager/Scripts/paintmanager/i18n.lua
+msgctxt "ui.settings.language_name"
+msgid "English"
+msgstr "日本語"
+
+#. Settings tooltip for the language selector. Mention the automatic option using its label and explain when English is shown.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:17
+msgctxt "ui.settings.help.language"
+msgid "Choose the language for PaintManager. Follow game language uses the game's interface language when a translation is available, and English otherwise."
+msgstr "PaintManagerの表示言語を選びます。「ゲームの言語に合わせる」ではゲームと同じ言語を使います。翻訳がない場合は英語で表示します。"
+
+#. Button in the selected preset details. Deletes the saved paint layout from the library.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:24 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.delete"
+msgid "Delete"
+msgstr "削除"
+
+#. Help for the preset Delete button. Deletion affects the saved layout only.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:26 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.delete_help"
+msgid "Permanently delete the selected saved configuration. Paints and current character or boat appearance are unchanged."
+msgstr "選んだ塗装プリセットを完全に削除します。塗料や、キャラクターと船の現在の外観に影響はありません。"
+
+#. Button on the presets page for importing saved paint configurations from local storage.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:31 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.storage.import"
+msgid "Import"
+msgstr "インポート"
+
+#. Main window title. This is the mod name, styled in all capitals.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:33 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.title"
+msgid "PAINT MANAGER"
+msgstr "PAINT MANAGER"
+
+#. Dismisses the main window or the native paint editor's finished save dialog.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:38 src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.button.close"
+msgid "Close"
+msgstr "閉じる"
+
+#. Button added to the game's paint editor. Opens the mod's main window.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:40 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.button.open_paintmanager"
+msgid "Open PaintManager"
+msgstr "PaintManagerを開く"
+
+#. Main toolbar button for rereading the current paint configuration and saved presets. Also names a refresh in the status line.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:42 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.button.refresh"
+msgid "Refresh"
+msgstr "更新"
+
+#. Button on the selected paint card. Learns that color's recipe when four matching cans are available and keeps the cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:44 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.button.learn_recipe"
+msgid "Learn"
+msgstr "習得"
+
+#. Button above the paint list. Learns all eligible recipes, including those hidden by search or pagination.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:46 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.button.learn_all"
+msgid "Learn all"
+msgstr "すべて習得"
+
+#. Status-line name for transferring the selected paint color from ship boxes to the player's backpack.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:48
+msgctxt "ui.transfer.gather_paint"
+msgid "Move selected paint to backpack"
+msgstr "選んだ塗料をバックパックに移す"
+
+#. Selected paint button. {quantity} is the desired total number of cans of this color in the backpack after transfer.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:50 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.transfer.gather_target"
+msgid "Top up to {quantity}"
+msgstr "{quantity}缶まで補充"
+
+#. Selected paint button when the backpack target is All. Takes only this color, up to available space.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:52 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.transfer.gather_color"
+msgid "Take all of this color"
+msgstr "この色をすべて取る"
+
+#. Selected paint button. Returns one can previously brought by the mod to the box it came from.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:54
+msgctxt "ui.transfer.return_paint"
+msgid "Return to original box"
+msgstr "元の箱に戻す"
+
+#. Bulk transfer button. Moves all colors from boxes in ship range to the player's backpack, up to capacity.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:56
+msgctxt "ui.transfer.gather_all"
+msgid "Move all paints to backpack"
+msgstr "すべての塗料をバックパックに移す"
+
+#. Bulk return action, also available on the signal-lost page. Returns cans previously moved by the mod to their original boxes.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:58
+msgctxt "ui.transfer.return_all"
+msgid "Return all paints to boxes"
+msgstr "すべての塗料を元の箱に戻す"
+
+#. Button added to the game's open storage box. Deposits cans of every color from the backpack into this box.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:60 src/PaintManager/Scripts/paintmanager/native_deposit_widget.lua
+msgctxt "ui.transfer.deposit_all_paints"
+msgid "Deposit all paints"
+msgstr "塗料をすべて収納"
+
+#. Help for the selected paint transfer. {quantity} is the target backpack total for this color, including cans already carried.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:62
+#, python-brace-format
+msgctxt "ui.transfer.gather_target_help"
+msgid "Take this color from ship storage until you have {quantity} in your backpack, or as many as fit."
+msgstr "バックパックにこの色が{quantity}缶そろうまで、船の収納箱から補充します。空きが足りない場合は入る分だけ取ります。"
+
+#. Help for taking all cans of one selected color when the target quantity is All.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:64
+msgctxt "ui.transfer.gather_color_help"
+msgid "Take as many cans of this color from ship storage as your backpack can hold."
+msgstr "船の収納箱から、バックパックに入るだけこの色の塗料缶を取ります。"
+
+#. Help for returning one can of the selected color. The mod remembers which box supplied the can.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:66
+msgctxt "ui.transfer.return_paint_help"
+msgid "Return one can brought by PaintManager to its original box."
+msgstr "PaintManagerで取り出した塗料缶を1缶、元の箱に戻します。"
+
+#. Help for the bulk gather action. Extra cans of the same color are included.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:68
+msgctxt "ui.transfer.gather_all_help"
+msgid "Move as many cans as fit from containers in ship range, including duplicate colors."
+msgstr "船の周囲にある収納箱から、バックパックに入るだけ塗料缶を取ります。同じ色の缶もまとめて取ります。"
+
+#. Help for the bulk return action. The original box can be out of range but must still be loaded in the game.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:70
+msgctxt "ui.transfer.return_all_help"
+msgid "Return cans brought by PaintManager to their original boxes, including loaded boxes outside ship range."
+msgstr "PaintManagerで取り出した缶をそれぞれ元の箱に戻します。船から離れた箱でも、ゲーム内に読み込まれていれば戻せます。"
+
+#. Selected paint card. {count} is the number of cans of this color already in the backpack.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:72 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.transfer.backpack_count"
+msgid "Backpack: {count}"
+msgstr "バックパック：{count}"
+
+#. Temporary label on the selected paint card while the mod reads the backpack contents.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:74 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.transfer.backpack_loading"
+msgid "Checking backpack..."
+msgstr "バックパックを確認中…"
+
+#. Paint list tab containing colors whose recipes the character has already learned.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:79 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tab.learned"
+msgid "Learned"
+msgstr "習得済み"
+
+#. Paint list tab containing unlearned recipes with enough matching cans to learn now.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:81 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tab.ready"
+msgid "Can Learn"
+msgstr "習得可能"
+
+#. Paint list tab for unlearned recipes for which the player still needs matching cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:83 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tab.missing"
+msgid "Need Cans"
+msgstr "塗料缶不足"
+
+#. Navigation tab for ordinary player preferences, including transfers, appearance and scan radius.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:85 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tab.settings"
+msgid "Settings"
+msgstr "設定"
+
+#. Paint category tab caption. {name} is the localized tab name and {count} is the number of colors in that category.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:106 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.tab.count"
+msgid "{name} ({count})"
+msgstr "{name}（{count}）"
+
+#. Settings checkbox for displaying each paint name below its tile in the grid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:108 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.names"
+msgid "Show paint names"
+msgstr "塗料名を表示"
+
+#. Checkbox in ordinary Settings that reveals or hides the English-language Debug tab.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:110 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.developer"
+msgid "Show developer tools"
+msgstr "開発者ツールを表示"
+
+#. Settings control for switching the size of paint tiles in the grid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:112 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.density"
+msgid "Tile size"
+msgstr "タイルのサイズ"
+
+#. Current tile size on the Settings button. {value} is the translated Compact or Comfortable size option.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:114 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.settings.density_value"
+msgid "Tiles: {value}"
+msgstr "タイル：{value}"
+
+#. Smaller tile size value in Settings. Used in the caption for the plural noun meaning paint tiles.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:116 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.compact"
+msgid "Compact"
+msgstr "コンパクト"
+
+#. Larger tile size value in Settings. Used in the caption for the plural noun meaning paint tiles.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:118 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.comfortable"
+msgid "Comfortable"
+msgstr "標準"
+
+#. Settings control for cycling through sort orders for paints.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:120 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.sort"
+msgid "Sort order"
+msgstr "並べ替え"
+
+#. Settings label above distance options. The radius is measured from the ship for both storage scans and connection.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:122 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.ship_radius"
+msgid "Ship scan radius"
+msgstr "船のスキャン半径"
+
+#. Settings heading for the single-color transfer target. Counts cans already in the backpack toward the target.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:124 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.backpack_target"
+msgid "Backpack target for selected paint"
+msgstr "選んだ色の目標所持数"
+
+#. Settings section for moving paint cans between the backpack and storage boxes.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:126 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.paint_transfers"
+msgid "Paint transfers"
+msgstr "塗料の移動"
+
+#. Settings checkbox that extends the game's Deposit similar action to match paint of every color if the destination already has paint.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:128 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.deposit_similar_all_colors"
+msgid "Group all colors in Deposit similar"
+msgstr "「類似アイテムを預ける」で全色をまとめる"
+
+#. Settings checkbox controlling the extra paint-only button on a game's open storage box. Use the same button name as ui.transfer.deposit_all_paints.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:130 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.show_deposit_all_paints"
+msgid "Show Deposit all paints button"
+msgstr "「塗料をすべて収納」ボタンを表示"
+
+#. Help for the player option that changes the game's existing Deposit similar action. This applies to different paint colors.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:132
+msgctxt "ui.settings.help.depositSimilarAllColors"
+msgid "When a box already holds paint, Deposit similar also moves backpack paints of other colors. Turn this off to use the game's usual matching rules."
+msgstr "箱に塗料が入っていれば、「類似アイテムを預ける」でバックパックにある別の色の塗料も移せます。オフにするとゲーム標準の判定を使います。"
+
+#. Help for showing the mod's paint-only button in the game's open storage menu. Both inventories must contain paint.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:134
+msgctxt "ui.settings.help.showDepositAllPaints"
+msgid "Show a separate paint-only button in the open box when both the box and your backpack contain paint. It works independently of Deposit similar."
+msgstr "開いた箱とバックパックの両方に塗料があるとき、塗料だけを収納するボタンを表示します。「類似アイテムを預ける」の設定に関係なく使えます。"
+
+#. Quantity option in transfer settings. Takes as many cans of the selected color as will fit in the backpack.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:136 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.all_cans"
+msgid "All"
+msgstr "すべて"
+
+#. Placeholder for entering a custom target number of cans in transfer settings.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:138 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.custom_cans"
+msgid "Custom amount"
+msgstr "数量を指定"
+
+#. Button that saves the custom backpack target quantity entered in the field beside it.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:140 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.settings.apply_quantity"
+msgid "Apply"
+msgstr "適用"
+
+#. Validation error for the custom backpack target. {maximum} is the largest permitted number of cans of one color.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:142 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.settings.invalid_backpack_target"
+msgid "Enter a whole number from 1 to {maximum}."
+msgstr "1から{maximum}までの整数を入力してください。"
+
+#. Help for the paint-name checkbox in ordinary Settings. The detail card keeps showing names when grid labels are hidden.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:144
+msgctxt "ui.settings.help.showNames"
+msgid "Show each paint's name below its thumbnail. Turn this off for a picture-only grid. Select a paint to read its name in the detail card."
+msgstr "タイルの画像の下に塗料名を表示します。オフにすると画像だけを表示します。塗料を選ぶと詳細欄で名前を確認できます。"
+
+#. Help beside the developer-tools checkbox in ordinary Settings. Debug is the name of the English-only developer tab.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:146
+msgctxt "ui.settings.help.showDeveloperTools"
+msgid "Show the Debug tab for reports, timing measurements and processing controls. Hiding Debug restores the default processing settings after pending work settles."
+msgstr "レポート、処理時間の計測、処理設定を扱う「Debug」タブを表示します。非表示にすると、保留中の処理が終わった時点で処理設定が初期値に戻ります。"
+
+#. Help explaining the two paint grid sizes on the Settings page.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:148
+msgctxt "ui.settings.help.density"
+msgid "Switch between comfortable and compact paint tiles. Compact tiles fit more colors in each row."
+msgstr "塗料タイルのサイズを標準とコンパクトから選べます。コンパクトにすると1行により多くの色が並びます。"
+
+#. Help for cycling through paint sort modes. Favorites stay above other colors in each list.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:150
+msgctxt "ui.settings.help.sort"
+msgid "Cycle through name A–Z, name Z–A, most cans first and fewest cans first. Favorites appear first within each paint list."
+msgstr "名前の昇順、名前の降順、缶数の多い順、缶数の少ない順に切り替えます。どの一覧でもお気に入りの色を先に表示します。"
+
+#. Help for the single-color backpack target. Keep the example arithmetic and distinguish this control from the all-colors bulk action.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:152
+msgctxt "ui.settings.help.quantity"
+msgid "Choose how many cans of the selected color to keep in your backpack. If you choose 5 and carry 2, the selected-paint action takes up to 3 more from ship boxes. All takes as many as fit. The bulk action collects every color that fits."
+msgstr "選んだ色をバックパックに何缶そろえるかを設定します。たとえば目標が5缶で2缶持っている場合、その色を補充すると船の箱から最大3缶取ります。「すべて」なら入る分だけ取ります。全色をまとめて移す操作では、色を問わず入るだけ取ります。"
+
+#. Help for scan radius in Settings. The ship is the center both for finding boxes and for the player's connection.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:154
+msgctxt "ui.settings.help.ship_radius"
+msgid "Distance from the ship's position used to find loaded storage boxes. You must also be inside this range to connect to PaintManager. The default is 35 m."
+msgstr "船を中心に、この距離内でゲームに読み込まれた収納箱を探します。PaintManagerに接続するには、プレイヤーもこの範囲にいる必要があります。初期値は35 mです。"
+
+#. Small fallback glyph shown on the favorite toggle when a paint is not a favorite and the star image is unavailable. Keep it to one glyph.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:156 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.favorite.empty"
+msgid "+"
+msgstr "+"
+
+#. Small fallback glyph shown on the favorite toggle when a paint is already a favorite and the star image is unavailable. Keep it to one glyph.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:158 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.favorite.filled"
+msgid "*"
+msgstr "*"
+
+#. Tooltip on the star button of a paint tile when this color is not in favorites.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:160 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.favorite.add"
+msgid "Add to favorites"
+msgstr "お気に入りに追加"
+
+#. Tooltip on the star button of a paint tile when this color is already a favorite.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:162 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.favorite.remove"
+msgid "Remove from favorites"
+msgstr "お気に入りから削除"
+
+#. Paint tile tooltip and details for a confirmed zero stock of the selected color.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:169 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tile.absent"
+msgid "No cans in your backpack or ship boxes"
+msgstr "バックパックと船の箱にこの色の塗料缶はありません"
+
+#. Stock line for one paint color. {count} can be an exact quantity, a lower bound or a question mark.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:171 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.tile.stock"
+msgid "Backpack and ship boxes: {count}"
+msgstr "バックパックと船の箱：{count}"
+
+#. Total number of cans across all colors in the backpack and scanned boxes. {count} may be exact, a lower bound, or unknown.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:173 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.stock.total"
+msgid "Total cans: {count}"
+msgstr "塗料缶の合計：{count}"
+
+#. Compact inventory quantity when some stock could not be read. At least {count} physical cans were confirmed.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:175 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.tile.lower_bound"
+msgid ">={count}"
+msgstr "≥{count}"
+
+#. Three-line hover tooltip on a paint tile. {name} is the game display name, {recipe} the translated recipe status and {stock} the translated stock description.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:177 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.tile.tooltip"
+msgid ""
+"{name}\n"
+"{recipe}\n"
+"{stock}"
+msgstr ""
+"{name}\n"
+"{recipe}\n"
+"{stock}"
+
+#. Prompt in the paint details card before a color is selected.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:179 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.paint.select"
+msgid "Select a paint to view its details."
+msgstr "塗料を選ぶと詳細を確認できます。"
+
+#. Two lines in the selected paint card. {recipe} is the translated recipe status and {stock} the translated inventory line.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:181 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.paint.details"
+msgid ""
+"{recipe}\n"
+"{stock}"
+msgstr ""
+"{recipe}\n"
+"{stock}"
+
+#. Tooltip for learning one recipe on the selected paint card. The four matching cans are checked but never consumed or moved.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:183 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.learn.help"
+msgid "Learn with four matching cans in your backpack and ship boxes combined. The cans stay where they are."
+msgstr "バックパックと船の箱に同じ色の缶が合計4缶あれば、その色のレシピを習得できます。習得しても缶はその場に残ります。"
+
+#. Expandable group in the paint grid for colors whose recipe or stock status is still being checked. {count} is the number of colors in that group.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:185 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.checking.caption"
+msgid "Checking ({count})"
+msgstr "確認中（{count}）"
+
+#. Paint list pagination button. Opens the previous page of paint colors.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:187 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.page.previous"
+msgid "Previous"
+msgstr "前へ"
+
+#. Paint list pagination button. Opens the next page of paint colors.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:189 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.page.next"
+msgid "Next"
+msgstr "次へ"
+
+#. Paint list footer. {shown} is the count displayed on this page, {total} the number matching the category and search, and {page} the current one-based page number.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:192 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.page.summary"
+msgid "{shown} of {total} paint · page {page}"
+msgid_plural "{shown} of {total} paints · page {page}"
+msgstr[0] "全{total}色中{shown}色を表示 · {page}ページ"
+
+#. Progress label during discovery, while the mod is finding storage containers to scan.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:194 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.finding"
+msgid "Finding containers..."
+msgstr "収納箱を検索中…"
+
+#. Scan progress when the box count is known. {completed} is the number checked and {total} the number to check.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:196 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.progress.containers"
+msgid "Containers checked: {completed} / {total}"
+msgstr "確認済みの収納箱：{completed} / {total}"
+
+#. Scan progress before the full number of boxes is known. {completed} is the number checked so far.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:198 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.progress.containers_total_unknown"
+msgid "Containers checked: {completed} · total unknown"
+msgstr "確認済みの収納箱：{completed}（総数不明）"
+
+#. Short progress phase label for a stock scan, including checking objects and counting cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:200 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.scan"
+msgid "Scan"
+msgstr "スキャン"
+
+#. Short progress phase label while the mod checks paint recipes for the character.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:202 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.recipes"
+msgid "Recipes"
+msgstr "レシピ"
+
+#. Short progress phase label while updating paint tiles in the grid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:204 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.tiles"
+msgid "Tiles"
+msgstr "タイル"
+
+#. Progress label while building or updating the player-visible paint list.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:206 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.updating"
+msgid "Updating paints..."
+msgstr "塗料一覧を更新中…"
+
+#. Short progress phase label while learning paint recipes.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:208 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.learning"
+msgid "Learning"
+msgstr "習得中"
+
+#. Scan progress warning that some paint stock could not be read and totals may be incomplete.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:210 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.partial"
+msgid "Some stock is unavailable"
+msgstr "一部の在庫を確認できません"
+
+#. Temporary completion label when the paint list update succeeds.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:212 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.updated"
+msgid "Updated"
+msgstr "更新完了"
+
+#. Single-line progress. {phase} is a translated activity name; {completed}, {total} and {remaining} count work units.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:214 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.progress.count"
+msgid "{phase}: {completed}/{total} · {remaining} left"
+msgstr "{phase}：{completed}/{total}（残り{remaining}）"
+
+#. Detailed tooltip for the progress indicator. {unit} is a localized unit phrase, {completed} the number finished, {total} the target and {remaining} the number still to process.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:216 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.progress.detail"
+msgid "{completed} of {total} {unit}; {remaining} left."
+msgstr "{unit}：{total}件中{completed}件完了、残り{remaining}件。"
+
+#. Unit phrase inserted into the progress tooltip when scanning game objects. Use a construction compatible with ui.progress.detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:218 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.unit.objects"
+msgid "scan objects processed"
+msgstr "スキャン対象の処理"
+
+#. Unit phrase inserted into the progress tooltip during storage-box checks. Use a construction compatible with ui.progress.detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:220 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.unit.containers"
+msgid "containers checked"
+msgstr "収納箱の確認"
+
+#. Unit phrase inserted into the progress tooltip while checking recipes. Use a construction compatible with ui.progress.detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:222 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.unit.recipes"
+msgid "recipe checks processed"
+msgstr "レシピの確認"
+
+#. Unit phrase inserted into the progress tooltip while updating paint tiles. Use a construction compatible with ui.progress.detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:224 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.progress.unit.tiles"
+msgid "paint tiles updated"
+msgstr "塗料タイルの更新"
+
+#. Status message if the selected paint's Learn action is unavailable.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:229 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.learn.unavailable"
+msgid "Recipe learning is unavailable."
+msgstr "レシピを習得できません。"
+
+#. Status when a request to learn one recipe has been accepted and is being checked.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:231 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.learn.queued"
+msgid "Checking current stock and recipe before learning."
+msgstr "習得前に現在の在庫とレシピを確認しています。"
+
+#. Status on the paint page when a recipe learning request fails. {error} is the accompanying failure detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:233 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.learn.failed"
+msgid "Recipe learning request failed: {error}"
+msgstr "レシピの習得に失敗しました：{error}"
+
+#. Status when the Learn all action for eligible paint recipes is unavailable.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:235 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.learn_all.unavailable"
+msgid "Batch recipe learning is unavailable."
+msgstr "レシピを一括で習得できません。"
+
+#. Status after the player requests Learn all. The mod checks eligible recipes and keeps the physical cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:237 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.learn_all.queued"
+msgid "Checking ready recipes before batch learning. Physical cans are kept."
+msgstr "一括習得できるレシピを確認しています。塗料缶は消費されません。"
+
+#. Distance option on a scan-radius button in Settings. {meters} is the distance from the ship, in meters.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:239 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.button.radius"
+msgid "{meters} m"
+msgstr "{meters} m"
+
+#. Navigation tab for saving and applying character or ship paint configurations.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:247 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.tab.presets"
+msgid "Presets"
+msgstr "プリセット"
+
+#. Target selector on the presets page. Opens saved configurations for the connected ship.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:249 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.type.ship"
+msgid "Ship"
+msgstr "船"
+
+#. Button added to the stock paint editor and heading of the dialog it opens. Saves the colors of the target being edited.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:251 src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.editor.save_preset"
+msgid "Save Preset"
+msgstr "プリセットを保存"
+
+#. Button in the stock paint editor's save-preset dialog. Dismisses it without saving the proposed new preset.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:253 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.editor.cancel"
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. Wait message in the native editor's Save Preset dialog while the saved library loads.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:255 src/PaintManager/Scripts/paintmanager/native_editor.lua
+msgctxt "ui.editor.loading"
+msgid "Loading saved presets…"
+msgstr "保存済みのプリセットを読み込み中…"
+
+#. Wait message in the native editor's Save Preset dialog while checking the target's actual colors and zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:257 src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.editor.checking"
+msgid "Checking current paint configuration…"
+msgstr "現在の塗装を確認中…"
+
+#. Native editor dialog shown when colors and empty zones already match an existing preset. {name} is its saved player-visible name.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:259 src/PaintManager/Scripts/paintmanager/native_editor.lua
+#, python-brace-format
+msgctxt "ui.editor.duplicate"
+msgid "This configuration is already saved as “{name}”."
+msgstr "この塗装は「{name}」として保存済みです。"
+
+#. Acknowledgment button in the native editor's dialog when the current layout is already saved.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:261 src/PaintManager/Scripts/paintmanager/native_editor.lua
+msgctxt "ui.button.ok"
+msgid "OK"
+msgstr "OK"
+
+#. Success notice in the stock editor popup. {name} is the saved preset name entered or accepted by the player.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:263 src/PaintManager/Scripts/paintmanager/native_editor.lua
+#, python-brace-format
+msgctxt "ui.editor.saved"
+msgid "Saved “{name}”."
+msgstr "「{name}」を保存しました。"
+
+#. Native paint editor popup when the edited target changes before validation or saving. Names the editor button to reopen the dialog.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:265 src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "ui.editor.source_changed"
+msgid "The editor’s paint target changed. Reopen Save Preset."
+msgstr "編集中の塗装対象が変わりました。「プリセットを保存」を開き直してください。"
+
+#. Target selector on the presets page. Opens paint configurations for the player character.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:267 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.type.character"
+msgid "Character"
+msgstr "キャラクター"
+
+#. Badge on a saved set that matches the arrangement currently applied to this target, including its empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:269 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.matches_current"
+msgid "Current"
+msgstr "使用中"
+
+#. Heading above the name field and Save button on the presets page. Captures the target's current colors and empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:271 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.save_current"
+msgid "Save current configuration"
+msgstr "現在の塗装を保存"
+
+#. Empty-state notice when no saved paint configurations exist for the selected character or ship.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:273 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.none_saved"
+msgid "No saved configurations for this target."
+msgstr "この対象には保存済みのプリセットがありません。"
+
+#. Pending-save notice in the presets list or native editor. {name} is the new preset's player-entered or accepted name.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:275 src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.saving"
+msgid "Saving {name}…"
+msgstr "「{name}」を保存中…"
+
+#. Presets page status when current paint zones are missing or could not be read completely.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:277 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.current_unknown"
+msgid "Current paint state is unavailable. Refresh to check it."
+msgstr "現在の塗装状態を取得できません。更新して確認してください。"
+
+#. Selected preset's detail note when the target already has exactly these colors and empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:279 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.already_applied"
+msgid "Already applied."
+msgstr "適用済みです。"
+
+#. Selected preset's detail note when applying it only needs to paint currently empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:281 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.can_fill"
+msgid "Fills empty zones from your backpack or accessible ship boxes."
+msgstr "バックパックか使用可能な船の箱にある塗料で、未塗装の箇所を塗ります。"
+
+#. Tooltip for the Apply preset button. Applying may install, replace or remove paint cans to match the saved layout.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:283 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.apply_help"
+msgid "Apply the saved colors and empty zones. Paint comes from your backpack or accessible ship boxes. Removed cans return to your backpack."
+msgstr "保存した色を適用し、未塗装だった箇所も再現します。塗料はバックパックか使用可能な船の箱から取り、外した缶はバックパックに戻します。"
+
+#. Selected preset's detail note when applying it would replace or remove existing paint. The removed cans go back into backpack slots.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:285 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.can_replace"
+msgid "Removed cans return to an empty slot in your backpack."
+msgstr "外した塗料缶はバックパックの空きスロットに戻します。"
+
+#. Selected preset's detail note when the saved paint zones are incompatible with the selected object.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:287 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.incompatible"
+msgid "This configuration is for a different paint layout."
+msgstr "このプリセットは別の塗装レイアウト用です。"
+
+#. Placeholder glyph for a thumbnail of a deliberately empty paint zone. Keep it short and distinguish it from an unknown zone.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:289 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.empty_thumbnail"
+msgid "—"
+msgstr "—"
+
+#. Tiny badge after a preset row's paint previews. {count} is how many additional zones are omitted from the thumbnails.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:291 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.more_zones"
+msgid "+{count}"
+msgstr "+{count}"
+
+#. Command name in the status line when rereading paint targets and saved presets.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:298 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.refresh"
+msgid "Refresh"
+msgstr "更新"
+
+#. Label or placeholder in the name field for saving the current paint configuration in the main window or the native editor.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:300 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.name_hint"
+msgid "Configuration name"
+msgstr "塗装プリセット名"
+
+#. Suggested editable name in the game's Save Preset dialog. {number} is the first available positive number. Saved names are kept exactly as entered.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:302 src/PaintManager/Scripts/paintmanager/preset_index.lua
+#, python-brace-format
+msgctxt "ui.preset.suggest_name"
+msgid "Preset {number}"
+msgstr "プリセット {number}"
+
+#. Button in the presets page and in the native editor's save dialog. Stores the current layout under the name in the field.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:304 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.save"
+msgid "Save"
+msgstr "保存"
+
+#. Selected preset button. Changes the character or ship's paint to match the saved colors and empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:306 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.apply"
+msgid "Apply"
+msgstr "適用"
+
+#. Presets page prompt before paint targets and saved configurations have been read.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:308 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.initial"
+msgid "Refresh paint state to view available targets and saved configurations."
+msgstr "塗装状態を更新すると、塗装できる対象と保存済みのプリセットを確認できます。"
+
+#. Status on the presets page when the requested preset operation is unavailable.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:310 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.unavailable"
+msgid "Configuration action is unavailable."
+msgstr "このプリセット操作は現在利用できません。"
+
+#. Status on the presets page when an operation is queued for a live check of the target.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:312 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.queued"
+msgid "Checking current paint state before this action."
+msgstr "操作の前に現在の塗装状態を確認しています。"
+
+#. Status when a preset request fails. {error} is the accompanying failure detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:314 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.failed"
+msgid "Configuration request failed: {error}"
+msgstr "プリセットの操作に失敗しました：{error}"
+
+#. Error during a preset save request if the mod cannot read the name entered in the text field.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:316 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.name_read_error"
+msgid "PaintManager could not read the configuration name field"
+msgstr "PaintManagerがプリセット名の入力欄を読み取れませんでした"
+
+#. Presets page notice when the library cannot be loaded. {error} is the accompanying failure detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:318 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.library_error"
+msgid "Saved configurations could not be loaded: {error}"
+msgstr "保存済みのプリセットを読み込めませんでした：{error}"
+
+#. Zone tooltip or row in the selected preset. {zone} is the paintable part name and {paint} is the paint name, Empty, or an unknown-state label.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:323 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.zone"
+msgid "{zone} · {paint}"
+msgstr "{zone}：{paint}"
+
+#. Label in a saved paint configuration for a zone deliberately left without paint.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:325 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.empty_zone"
+msgid "Empty"
+msgstr "未塗装"
+
+#. Label for a zone whose saved paint data is unavailable. Distinguish an unknown state from a known empty zone.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:327 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.unknown_zone"
+msgid "Paint state unknown"
+msgstr "塗装状態不明"
+
+#. Fallback label for a saved zone lacking a game-provided display name. {material} and {part} are unchanged game identifiers.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:329 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.logical_zone"
+msgid "Material {material} / part {part}"
+msgstr "マテリアル {material} / パーツ {part}"
+
+#. Heading above saved presets for the selected target. {count} is the number of matching saved sets.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:331 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.preset.saved"
+msgid "Saved configurations ({count})"
+msgstr "保存済みのプリセット（{count}）"
+
+#. Prompt in the preset details area before a saved configuration is selected.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:337 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.preset.choose_saved"
+msgid "Select a saved configuration to preview its zones"
+msgstr "保存済みのプリセットを選ぶと各部位の塗装を確認できます"
+
+#. Placeholder in the paint grid search field. Search operates on the names supplied by the game.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:343 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.search.hint"
+msgid "Search paint names…"
+msgstr "塗料名で検索…"
+
+#. Button next to the paint search field. Clears the query and redisplays matching paints.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:345 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.search.clear"
+msgid "Clear"
+msgstr "クリア"
+
+#. Sort option for paint names, forward alphabetical order.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:356 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.sort.name_asc"
+msgid "Name A–Z"
+msgstr "名前の昇順"
+
+#. Sort option for paint names, reverse alphabetical order.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:358 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.sort.name_desc"
+msgid "Name Z–A"
+msgstr "名前の降順"
+
+#. Sort option ordering colors by the total number of cans, largest first.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:360 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.sort.count_desc"
+msgid "Cans: high to low"
+msgstr "缶数の多い順"
+
+#. Sort option ordering colors by the total number of cans, smallest first.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:362 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.sort.count_asc"
+msgid "Cans: low to high"
+msgstr "缶数の少ない順"
+
+#. Caption on the paint grid and Settings sort controls. {name} is the translated currently selected sort option.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:364 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.sort.caption"
+msgid "Sort: {name}"
+msgstr "並び順：{name}"
+
+#. Initial paint list status before the first view has been prepared.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:366 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.view.initial"
+msgid "Preparing paint view…"
+msgstr "塗料一覧を準備中…"
+
+#. Tooltip for Learn all on the paint list. Applies to every eligible recipe in the category, independent of the current search and page.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:371 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.view.scope"
+msgid "Learn all includes ready paints hidden by search or another page. All cans are kept."
+msgstr "「すべて習得」は検索結果や表示中のページにない色も含め、習得可能なすべてのレシピが対象です。塗料缶は消費されません。"
+
+#. Heading on the disconnected PaintManager screen when its link to the ship is unavailable.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:376 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.lost"
+msgid "Signal lost"
+msgstr "信号喪失"
+
+#. Main toolbar label for the ship-centered search radius. {meters} is the configured distance in metres.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:378 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.stock.radius.scope"
+msgid "Ship scan radius: {meters} m"
+msgstr "船のスキャン半径：{meters} m"
+
+#. Disconnected screen instruction when the measured player-to-ship distance exceeds the current range.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:380 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.description"
+msgid "Move closer to the ship to connect."
+msgstr "船に近づくと接続できます。"
+
+#. Disconnected screen distance line. {distance} is the measured distance to the ship; {radius} is the maximum connection distance, both in metres.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:382 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.connection.distance"
+msgid "Distance to ship: {distance} m · range {radius} m"
+msgstr "船まで{distance} m · 接続範囲{radius} m"
+
+#. Disconnected screen when the distance cannot be measured. {radius} is the configured connection range in metres.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:384 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.connection.distance_unavailable"
+msgid "Distance to ship: unavailable · range {radius} m"
+msgstr "船までの距離不明 · 接続範囲{radius} m"
+
+#. Disconnected screen while the game is still identifying the player's ship.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:386 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.locating"
+msgid "Locating ship"
+msgstr "船の位置を確認中"
+
+#. Disconnected screen when PaintManager cannot locate the current ship.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:388 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.ship_unavailable"
+msgid "Ship not located"
+msgstr "船が見つかりません"
+
+#. Disconnected screen when more than one ship matches and PaintManager cannot select one safely.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:390 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.ship_ambiguous"
+msgid "Several ships found"
+msgstr "複数の船が見つかりました"
+
+#. Disconnected screen when the player's position is unavailable, so distance to the ship cannot be measured.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:392 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.player_unavailable"
+msgid "Player position unavailable"
+msgstr "プレイヤーの位置を取得できません"
+
+#. Generic disconnected-screen explanation when PaintManager lacks a more specific reason for the failed ship connection.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:394 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.connection.unavailable"
+msgid "Ship connection unavailable"
+msgstr "船に接続できません"
+
+#. Empty paint detail panel before the first stock snapshot has been taken.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:401 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.empty.not_refreshed"
+msgid "No paint snapshot yet. Open the window within ship range."
+msgstr "塗料の在庫はまだ確認できていません。船の範囲内でウィンドウを開いてください。"
+
+#. Empty paint details after applying the current tab and search filter.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:407 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.empty.no_matches"
+msgid "No paints match this page and search."
+msgstr "このページに検索条件に合う塗料はありません。"
+
+#. Fallback in paint tiles, tooltips, preset thumbnails and details when the game supplies no paint display name.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:409 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.paint.name_unavailable"
+msgid "Game display name unavailable"
+msgstr "ゲーム内の表示名を取得できません"
+
+#. Paint tile tooltip and details when the current character has already unlocked this paint recipe.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:420 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.recipe.unlocked"
+msgid "Recipe unlocked"
+msgstr "レシピ習得済み"
+
+#. Paint tile tooltip and details when the current character is confirmed not to know this paint recipe.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:422 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.recipe.locked"
+msgid "Recipe locked"
+msgstr "レシピ未習得"
+
+#. Paint tile tooltip and details when membership in the character's recipe library could not be verified.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:424 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.recipe.unknown"
+msgid "Recipe status unknown"
+msgstr "レシピの状態不明"
+
+#. Temporary label while the list of paints or saved presets is being prepared for display.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:431 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.render.building"
+msgid "Building list…"
+msgstr "一覧を作成中…"
+
+#. Status prefix in the main footer for a command accepted but not started.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:437 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.status.queued"
+msgid "Queued"
+msgstr "待機中"
+
+#. Status prefix in the main footer while a command is in progress.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:439 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.status.running"
+msgid "Running"
+msgstr "実行中"
+
+#. Status prefix in the main footer after a command finished.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:441 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.status.done"
+msgid "Done"
+msgstr "完了"
+
+#. Status prefix in the main footer for a failed command; the message follows it.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:443 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.status.error"
+msgid "Error"
+msgstr "エラー"
+
+#. Status prefix after a cancelled command; also replaces progress text after an interruption.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:445 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.status.cancelled"
+msgid "Cancelled"
+msgstr "キャンセル済み"
+
+#. Middle part of the footer status line. {command} is the display name of the action; keep the introductory separator and spacing.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:447 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.status.command"
+msgid " · {command}"
+msgstr " · {command}"
+
+#. Main footer. {state} is the status label; {command} is optional and already includes its introductory separator. {message} contains an error or transfer detail and may be empty.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:449 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.status.line"
+msgid "{state}{command} · {message}"
+msgstr "{state}{command} · {message}"
+
+#. Fallback error after a command was rejected without a specific reason; shared by paint transfers, learning and presets.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:455 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.queue.rejected"
+msgid "Command was not accepted."
+msgstr "操作を受け付けられませんでした。"
+
+#. Fallback status after a command was queued without a specific message; visible for paint transfers.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:457 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.queue.waiting"
+msgid "Waiting to run."
+msgstr "実行を待っています。"
+
+#. Compact placeholder for a value that has not been checked, especially a stock quantity. It must remain distinct from zero.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:472 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.value.unknown"
+msgid "?"
+msgstr "?"
+
+#. Opening PaintManager requires a live player character who is not controlling a vehicle.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:474 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.player_unavailable"
+msgid "Load a save and leave vehicle controls."
+msgstr "セーブデータをロードし、乗り物の操縦を終了してください。"
+
+#. Error while locating the class used to create the normal window; the game's asset registry cannot help load it.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:476 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.registry_unavailable"
+msgid "PaintManager UI host is not loaded and AssetRegistryHelpers is unavailable"
+msgstr "PaintManagerのUIホストが未ロードで、AssetRegistryHelpersも利用できません"
+
+#. Normal window creation failed to resolve its host class. {class} is the engine's class path.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:478 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.error.host_class_unavailable"
+msgid "PaintManager UI host class unavailable: {class}"
+msgstr "PaintManagerのUIホストクラスを取得できません：{class}"
+
+#. Window creation refused because the resolved game object has an unexpected class.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:480 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.host_class_unexpected"
+msgid "PaintManager UI host resolved to an unexpected class"
+msgstr "PaintManagerのUIホストのクラスが想定と異なります"
+
+#. Window-opening error when the intended host cannot be verified as an Unreal UserWidget subclass.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:482 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.host_not_userwidget"
+msgid "PaintManager UI host is not a verified UserWidget subclass"
+msgstr "PaintManagerのUIホストがUserWidgetのサブクラスであることを確認できません"
+
+#. Window layout error when the viewport dimensions or DPI scale are invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:484 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.viewport_invalid"
+msgid "Invalid viewport dimensions or DPI"
+msgstr "ビューポートの寸法またはDPIが無効です"
+
+#. Window layout error when the available screen area cannot accommodate the panel.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:486 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.viewport_small"
+msgid "Viewport is too small for PaintManager"
+msgstr "PaintManagerを表示するにはビューポートが小さすぎます"
+
+#. A widget class required to build the normal interface is missing. {class} is its Unreal class name.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:488 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.error.umg_class_unavailable"
+msgid "UMG class unavailable: {class}"
+msgstr "UMGクラスを取得できません：{class}"
+
+#. Error while constructing a widget in the normal window: its Unreal WidgetTree is missing.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:490 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.tree_construction"
+msgid "PaintManager WidgetTree unavailable during construction"
+msgstr "構築中にPaintManagerのWidgetTreeを取得できませんでした"
+
+#. Error when creating a normal UI control. {class} identifies the Unreal widget class.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:492 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.error.widget_construction"
+msgid "Cannot construct UMG {class}"
+msgstr "UMGの{class}を作成できません"
+
+#. A UI action could not be dispatched because the window is missing its command queue callback.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:494 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.queue_unavailable"
+msgid "PaintManager queue unavailable"
+msgstr "PaintManagerのコマンドキューを利用できません"
+
+#. Cleanup error while closing the main window; the host still appears in the game viewport.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:496 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.host_not_removed"
+msgid "PaintManager host remains in viewport after removal"
+msgstr "削除したはずのPaintManagerのホストがビューポートに残っています"
+
+#. Error returned by closing the normal window. {errors} lists one or more individual cleanup failures.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:498 src/PaintManager/Scripts/paintmanager/ui.lua
+#, python-brace-format
+msgctxt "ui.error.close"
+msgid "Closing: {errors}"
+msgstr "ウィンドウを閉じる際のエラー：{errors}"
+
+#. Window-opening error when the game does not supply the current Unreal world.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:500 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.world_unavailable"
+msgid "PaintManager current world unavailable"
+msgstr "PaintManagerが現在のワールドを取得できません"
+
+#. Window-opening refusal because another menu or mod window already controls input.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:502 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.menu_open"
+msgid "Close the game menu or the other mod's window first."
+msgstr "先にゲームメニューまたは他のMODのウィンドウを閉じてください。"
+
+#. Window-opening refusal because the pause menu is active.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:504 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.pause_open"
+msgid "Close the pause menu first."
+msgstr "先にポーズメニューを閉じてください。"
+
+#. Window-opening error when the game cannot provide its layout or input services.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:506 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.services_unavailable"
+msgid "UMG services unavailable"
+msgstr "UMGサービスを利用できません"
+
+#. Window-opening error when Unreal cannot instantiate the UserWidget hosting PaintManager.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:508 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.host_creation"
+msgid "Cannot create PaintManager UserWidget host"
+msgstr "PaintManagerのUserWidgetホストを作成できません"
+
+#. Window-opening error when the newly created host has no usable WidgetTree.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:510 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.tree_unavailable"
+msgid "PaintManager UserWidget has no valid WidgetTree"
+msgstr "PaintManagerのUserWidgetに有効なWidgetTreeがありません"
+
+#. Window-opening error when the widget tree belongs to another object.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:512 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.tree_ownership"
+msgid "PaintManager host WidgetTree is not owned by its new instance"
+msgstr "PaintManagerのホストのWidgetTreeが新しいインスタンスに属していません"
+
+#. Window-opening error when the expected native root panel is missing.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:514 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.root_unavailable"
+msgid "PaintManager host has no native CanvasPanel root"
+msgstr "PaintManagerのホストにネイティブのCanvasPanelルートがありません"
+
+#. Window-opening error when the root canvas has a different owner than expected.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:516 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.root_ownership"
+msgid "PaintManager native canvas is not owned by its host WidgetTree"
+msgstr "PaintManagerのネイティブキャンバスがホストのWidgetTreeに属していません"
+
+#. Error while the window is open: its player controller has become invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:518 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.controller_invalid"
+msgid "PaintManager UI controller is no longer valid"
+msgstr "PaintManagerのUIコントローラーが無効になりました"
+
+#. Error while the window is open: the Unreal UserWidget hosting it became invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:520 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.host_invalid"
+msgid "PaintManager UI UserWidget host is no longer valid"
+msgstr "PaintManagerのUIのUserWidgetホストが無効になりました"
+
+#. Error while the window is open: the Unreal WidgetTree became invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:522 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.tree_invalid"
+msgid "PaintManager UI WidgetTree is no longer valid"
+msgstr "PaintManagerのUIのWidgetTreeが無効になりました"
+
+#. Error while the window is open: the root CanvasPanel became invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:524 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.root_invalid"
+msgid "PaintManager UI CanvasPanel root is no longer valid"
+msgstr "PaintManagerのUIのCanvasPanelルートが無効になりました"
+
+#. Error while the window is open: the main panel frame became invalid.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:526 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.frame_invalid"
+msgid "PaintManager UI panel frame is no longer valid"
+msgstr "PaintManagerのUIのパネルフレームが無効になりました"
+
+#. Error while the window is open: the WidgetTree's root widget is no longer the expected one.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:528 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.root_changed"
+msgid "PaintManager UI WidgetTree.RootWidget changed"
+msgstr "PaintManagerのUIのWidgetTree.RootWidgetが変わりました"
+
+#. Paint search failed because the input field's current text could not be read.
+#: src/PaintManager/Scripts/paintmanager/locales/en_ui.lua:530 src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "ui.error.search_text"
+msgid "PaintManager could not read the search field text"
+msgstr "PaintManagerが検索欄のテキストを読み取れませんでした"
+
+#. Verified outcome inserted in the status after learning one color's recipe.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:4 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.learned"
+msgid "learned"
+msgstr "習得完了"
+
+#. Recipe learning found that the character already knew the selected recipe.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:6 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.known"
+msgid "already learned"
+msgstr "習得済み"
+
+#. Status result when processing the requested batch of recipes completed.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:8 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.completed"
+msgid "completed"
+msgstr "完了"
+
+#. Batch outcome when there were no remaining recipes that could be learned.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:10 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.none"
+msgid "no eligible recipes"
+msgstr "習得可能なレシピなし"
+
+#. Preset application finished and the mod verified the target's resulting colors and empty zones.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:12 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.applied"
+msgid "applied and verified"
+msgstr "適用・確認済み"
+
+#. Preset application result when the current paint layout already matches the saved one.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:14 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.matches"
+msgid "already matches"
+msgstr "現在の塗装と一致"
+
+#. Outcome of a recipe or paint action for which the mod cannot confirm the result.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:16 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.uncertain"
+msgid "the result could not be verified"
+msgstr "結果を確認できませんでした"
+
+#. Result when a requested paint or recipe action was rejected before it could complete.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:18 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.rejected"
+msgid "request rejected"
+msgstr "リクエスト拒否"
+
+#. Receipt outcome when the requested action was cancelled.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:20 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.cancelled"
+msgid "cancelled"
+msgstr "キャンセル済み"
+
+#. Outcome after some requested paint or recipe changes succeeded before the action stopped.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:22 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.partial"
+msgid "partially completed"
+msgstr "一部完了"
+
+#. Batch recipe learning stopped on an error before finishing the remaining recipes.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:24 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.stopped"
+msgid "stopped after an error"
+msgstr "エラーのため停止"
+
+#. Batch recipe learning stopped after an uncertain result; no further recipes were attempted.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:26 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.outcome.stopped_unverified"
+msgid "stopped because a result could not be verified"
+msgstr "結果を確認できなかったため停止"
+
+#. Player-facing fallback when an internal operation fails without a more specific user-actionable reason.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:28 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.failed"
+msgid "The operation could not be completed. See the log for details."
+msgstr "操作を完了できませんでした。詳しくはログを確認してください。"
+
+#. Transfer could not fit a paint can in its destination, which can be a storage box or the backpack.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:30 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.destination_full"
+msgid "The destination inventory has no room for this paint."
+msgstr "移動先にこの塗料を入れる空きがありません。"
+
+#. Applying a saved layout would remove paint and needs an empty backpack slot with enough capacity.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:32 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.backpack_full"
+msgid "Make room in your backpack for the removed paint."
+msgstr "外した塗料缶を入れるため、バックパックに空きを作ってください。"
+
+#. The player cannot complete the requested paint layout or transfer with the available physical cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:34 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.shortage"
+msgid "There are not enough cans of the required colors in your backpack and accessible ship boxes."
+msgstr "バックパックと使用可能な船の箱を合わせても、必要な色の缶が足りません。"
+
+#. Returning paint to its original box requires identifying and accessing that same box again.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:36 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.origin"
+msgid "The original box could not be verified. Check that it is loaded and accessible."
+msgstr "元の箱を確認できませんでした。ゲームに読み込まれていて、使用できる状態か確認してください。"
+
+#. Transfer controls are unavailable because the player's backpack could not be read.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:38 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.reason.backpack"
+msgid "Could not check your backpack. Reopen the window to try again."
+msgstr "バックパックを確認できませんでした。ウィンドウを開き直してもう一度お試しください。"
+
+#. Transfer controls could not load or reconcile the record of which boxes supplied the player's cans.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:40 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.reason.origins"
+msgid "Could not verify the recorded origins of your paint cans."
+msgstr "塗料缶を取り出した箱の記録を確認できませんでした。"
+
+#. The source library or its snapshot changed before the proposed edit could be saved.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:42 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.library_changed"
+msgid "Library preview changed. Refresh the saved configurations and try again."
+msgstr "プレビュー後にプリセット一覧が変わりました。保存済みのプリセットを更新してやり直してください。"
+
+#. A saved preset library failed validation. The player should check the cause before another edit.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:44 src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.reason.library_invalid"
+msgid "Invalid preset library. Check the log before editing it."
+msgstr "プリセットライブラリのデータが無効です。編集する前にログを確認してください。"
+
+#. A persistence or preset library error has no more specific verified player-facing cause.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:46 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "main.reason.storage"
+msgid "Saved data could not be verified. Check the log for details."
+msgstr "保存データを確認できませんでした。詳しくはログを確認してください。"
+
+#. Transfer controls cannot start until the current character's backpack and eligible paint storage are available.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:48 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.transfer.not_ready"
+msgid "Waiting for the current backpack and paint storage."
+msgstr "現在のバックパックと塗料の収納先が利用可能になるまでお待ちください。"
+
+#. Shown when a gather or return action is disabled because the installed game build has not been verified.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:50 src/PaintManager/Scripts/main.lua
+msgctxt "main.transfer.build_unverified"
+msgid "Paint transfers require the verified game build."
+msgstr "検証済みのゲームバージョンでのみ塗料を移せます。"
+
+#. Gather/return refusal when none of the selected paint can be moved under the current stock or return rules.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:52 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.transfer.unavailable"
+msgid "No eligible paint is available for this transfer."
+msgstr "今回の操作で移せる塗料がありません。"
+
+#. Gather selected paint button. {count} is the configured target for this color in the backpack; the current stock already meets it.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:55 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+#, python-brace-format
+msgctxt "main.transfer.target_reached"
+msgid "Your backpack already holds the target of {count} can or more."
+msgid_plural "Your backpack already holds the target of {count} cans or more."
+msgstr[0] "バックパックにはすでに目標の{count}缶以上あります。"
+
+#. Transfer receipt shown after gathering or returning paint. {moved} counts confirmed moves; {skipped} counts candidates skipped.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:57 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+#, python-brace-format
+msgctxt "main.transfer.result"
+msgid "Confirmed moves: {moved}. Skipped: {skipped}."
+msgstr "移動を確認した缶：{moved}、スキップ：{skipped}。"
+
+#. Appended to the transfer receipt after an uncertain move; further transfers are blocked until the save is reloaded.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:59 src/PaintManager/Scripts/paintmanager/player_messages.lua src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.transfer.uncertain"
+msgid "The last move could not be verified. Further transfers require reloading the save."
+msgstr "最後の移動を確認できませんでした。次の移動の前にセーブデータをロードし直してください。"
+
+#. Appended to the move receipt if some storage could not be read. Confirmed moves still count.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:61 src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.transfer.incomplete"
+msgid "Some storage could not be checked."
+msgstr "一部の収納先を確認できませんでした。"
+
+#. Live status during a gather or return operation. {moved} is the number of confirmed moves so far.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:63 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.transfer.running"
+msgid "Moving paint cans. Moved: {moved}."
+msgstr "塗料缶を移動中。移動済み：{moved}缶。"
+
+#. Persistence notice on the presets page. The account library was saved, but the in-game copy is still pending. {error} is optional storage detail.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:80 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.storage.local_pending"
+msgid "Saved locally; game mirror pending. Reopen the window or refresh configurations to reconcile. {error}"
+msgstr "ローカルに保存しました。ゲーム側のコピーは同期待ちです。ウィンドウを開き直すか、プリセット一覧を更新して同期してください。{error}"
+
+#. Presets storage warning after publishing the local file. {error} gives the verification or cleanup failure, if available.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:82 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.storage.local_verification_uncertain"
+msgid "Local JSON was published, but verification or cleanup failed; mirror pending. Refresh before editing. {error}"
+msgstr "ローカルのJSONファイルは書き込み済みですが、検証または後処理に失敗しました。ゲーム側のコピーは同期待ちです。編集前に更新してください。{error}"
+
+#. Presets storage warning after an uncertain write to the in-game mirror. {error} is optional detail about that attempt.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:84 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.storage.local_uncertain"
+msgid "Saved locally; game mirror uncertain. Further native attempts are blocked in this context. {error}"
+msgstr "ローカルに保存しました。ゲーム側のコピーを確認できません。現在のプレイ状況ではゲーム側への再書き込みがブロックされています。{error}"
+
+#. Presets storage notice after updating the account library and staging its mirror in the current save slot. The ordinary game save is still needed.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:86 src/PaintManager/Scripts/main.lua
+msgctxt "main.storage.local_staged"
+msgid "Local library saved; mirror staged in the loaded game. Save the game normally to persist it in this slot."
+msgstr "ライブラリをローカルに保存し、プレイ中のゲームにコピーを反映しました。現在のスロットに記録するには、通常どおりゲームをセーブしてください。"
+
+#. Presets storage notice while confirmation of a local write is outstanding.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:88 src/PaintManager/Scripts/main.lua
+msgctxt "main.storage.publication_pending"
+msgid "Local publication is awaiting confirmation. Refresh configurations to check the library and game mirror."
+msgstr "ローカルへの書き込みは確認待ちです。プリセット一覧を更新して、ライブラリとゲーム側のコピーを確認してください。"
+
+#. Persistence warning on the presets page. {error} is the detail returned by the storage operation.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:96 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.storage.unavailable"
+msgid "Mod storage unavailable: {error}"
+msgstr "MODの保存領域を利用できません：{error}"
+
+#. Import refusal when the loaded game's mod data is not yet available.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:98 src/PaintManager/Scripts/main.lua
+msgctxt "main.storage.not_ready"
+msgid "Wait for mod data to load. If storage failed, inspect the error before changing this save."
+msgstr "MODデータの読み込み完了までお待ちください。保存領域でエラーが起きた場合は、このセーブデータを変更する前に詳細を確認してください。"
+
+#. Presets import was requested while another command or preference write was in progress.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:100 src/PaintManager/Scripts/main.lua
+msgctxt "main.storage.busy"
+msgid "Wait for the current command to finish before importing configurations."
+msgstr "現在のコマンドが終わってからプリセットをインポートしてください。"
+
+#. Shown on the presets page or when importing on a game build for which persistence has not been verified.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:102 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.storage.build"
+msgid "Saving PaintManager settings and presets requires the verified game build."
+msgstr "PaintManagerの設定とプリセットを保存するには検証済みのゲームバージョンが必要です。"
+
+#. Result of applying a saved paint layout. {outcome} is the operation outcome, including failures and partial changes.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:117 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.preset.result"
+msgid "Preset result: {outcome}"
+msgstr "プリセットの適用結果：{outcome}"
+
+#. Presets action requires a freshly read paint state and a current target: either character or ship.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:119 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.preset.refresh_required"
+msgid "Refresh paint state and select the current target first."
+msgstr "先に塗装状態を更新して対象を選んでください。"
+
+#. Saving/applying a preset failed because the character or ship paint zones could not all be read. May also appear in the game's paint editor.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:121 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/native_editor.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.preset.target_incomplete"
+msgid "The selected paint target is incomplete; inspect diagnostics and refresh."
+msgstr "選んだ対象の塗装をすべて読み取れませんでした。診断情報を確認して更新してください。"
+
+#. Validation of a new preset name in PaintManager or the game's paint editor. The limit is in bytes rather than characters.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:123 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/native_editor.lua
+msgctxt "main.preset.name_invalid"
+msgid "Enter a configuration name (1–128 UTF-8 bytes, no control characters)."
+msgstr "プリセット名を入力してください（UTF-8で1〜128バイト、制御文字は使用不可）。"
+
+#. Fallback refusal when a requested action, including a paint transfer, does not match a known command.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:135 src/PaintManager/Scripts/main.lua
+msgctxt "main.queue.unknown"
+msgid "Unknown command"
+msgstr "不明なコマンドです"
+
+#. Command refusal while an indivisible operation is in progress.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:137 src/PaintManager/Scripts/main.lua
+msgctxt "main.queue.atomic_busy"
+msgid "Another atomic operation is running"
+msgstr "中断できない操作を実行中です"
+
+#. A player action could not be queued because the pending command limit was reached.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:143 src/PaintManager/Scripts/main.lua
+msgctxt "main.queue.full"
+msgid "Command queue is full"
+msgstr "コマンドキューがいっぱいです"
+
+#. Fallback shown when an action cannot identify the character or game world currently in use.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:148 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.error.no_character"
+msgid "No valid current character or world"
+msgstr "現在のキャラクターまたはワールドを取得できません"
+
+#. A scan or transfer stopped when the character/world no longer matched the one for which stock was read.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:150 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.error.context_changed"
+msgid "Collection context changed; reopen the window to refresh nearby containers"
+msgstr "キャラクターまたはワールドが変わりました。ウィンドウを開き直して周囲の収納箱を再確認してください"
+
+#. Shared fallback when a stock scan, preset inspection or save operation failed and supplied no specific detail; it can appear in the game's paint editor.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:152 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/native_editor.lua
+msgctxt "main.error.job_failed"
+msgid "Collection job failed"
+msgstr "データの取得に失敗しました"
+
+#. Error fallback after a completed stock scan returned no results model.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:154 src/PaintManager/Scripts/main.lua
+msgctxt "main.error.missing_model"
+msgid "Completed collection job returned no model"
+msgstr "データの取得は完了しましたが、結果が返されませんでした"
+
+#. Action refused or interrupted because the player is outside the ship connection or the ship cannot be confirmed.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:156 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.connection.lost"
+msgid "Signal lost. Move closer to the ship."
+msgstr "信号が途切れました。船に近づいてください。"
+
+#. Fallback error when opening PaintManager requires a loaded save and a player-controlled character.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:158 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.error.load_character"
+msgid "Load a save and leave vehicle controls"
+msgstr "セーブデータをロードし、乗り物の操縦を終了してください"
+
+#. Fallback for a command interrupted by an error while drawing the PaintManager window.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:160 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/ui.lua
+msgctxt "main.error.render_failed"
+msgid "UI rendering failed"
+msgstr "UIの描画に失敗しました"
+
+#. Learn all refusal. No unlearned recipe has at least four cans of its color across eligible stock.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:167 src/PaintManager/Scripts/main.lua
+msgctxt "main.bulk.none"
+msgid "No locked recipe has four matching cans in your backpack and ship boxes combined."
+msgstr "バックパックと船の箱を合わせても、同じ色の缶が4缶そろっている未習得レシピはありません。"
+
+#. Learn all receipt. {outcome} is the batch result; {learned}/{total} counts learned versus initially eligible recipes; {known}, {rejected} and {unverified} are other result counts.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:173 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.bulk.result"
+msgid "Batch {outcome}: learned {learned}/{total}; already known {known}; rejected {rejected}; unverified {unverified}."
+msgstr "一括習得の結果：{outcome}。習得：{learned}/{total}、習得済み：{known}、拒否：{rejected}、未確認：{unverified}。"
+
+#. Learn all was interrupted after a native attempt. {outcome} identifies its result; completed recipe grants remain in effect.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:175 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.bulk.after_attempt"
+msgid "Batch stopped: {outcome}. Recipes already granted remain learned; see the report."
+msgstr "一括習得を停止しました：{outcome}。習得したレシピは保持されます。詳しくはレポートを確認してください。"
+
+#. Recipe learning refusal after the current player or world changed.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:181 src/PaintManager/Scripts/main.lua
+msgctxt "main.learn.context_changed"
+msgid "The player context changed. Reopen the window before learning."
+msgstr "プレイヤーの状態が変わりました。習得前にウィンドウを開き直してください。"
+
+#. An action was requested while the PaintManager window was closing. The existing English is also reused for some preset and transfer actions.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:183 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.learn.window_closed"
+msgid "The window closed before recipe learning started."
+msgstr "レシピ習得が始まる前にウィンドウが閉じられました。"
+
+#. Recipe learning refusal on an unsupported build. The existing English is also reused by the preset-apply guard.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:185 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.learn.build_unverified"
+msgid "Recipe learning is unavailable because the installed game build is not the verified reference build."
+msgstr "インストールされているゲームのバージョンが検証済みのものと異なるため、レシピを習得できません。"
+
+#. A shared busy guard refuses recipe learning; the existing English is also reused for preset and paint transfer actions.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:187 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.learn.busy"
+msgid "Wait for the current command to finish before learning a recipe."
+msgstr "現在のコマンドが終わってからレシピを習得してください。"
+
+#. Learn refusal when the current paint count is still missing or belongs to a different scan range.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:189 src/PaintManager/Scripts/main.lua
+msgctxt "main.learn.refresh_required"
+msgid "Reopen the window and wait for the ship stock count before learning."
+msgstr "ウィンドウを開き直し、船の在庫の集計が終わってからレシピを習得してください。"
+
+#. A fresh stock check contradicted the earlier count for one recipe. Four matching physical cans are required.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:191 src/PaintManager/Scripts/main.lua
+msgctxt "main.learn.cached_stock_changed"
+msgid "Could not confirm four matching cans in your backpack and the scanned ship boxes. Reopen the window to refresh."
+msgstr "バックパックとスキャン済みの船の箱に同じ色が4缶あることを確認できませんでした。ウィンドウを開き直して更新してください。"
+
+#. Eligibility failure for one recipe: it must be locked and stock must contain four matching cans in total.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:193 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.learn.not_eligible"
+msgid "Learning requires a locked recipe and four matching cans in your backpack and ship boxes combined."
+msgstr "習得するには未習得のレシピを選び、バックパックと船の箱にその色の缶を合計4缶以上そろえてください。"
+
+#. Single-recipe error after a failed or unverified operation. {outcome} is the result or detailed error text.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:199 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.learn.failed"
+msgid "Recipe learning result: {outcome}. Check the report and log before retrying."
+msgstr "レシピの習得結果：{outcome}。再試行する前にレポートとログを確認してください。"
+
+#. Shown after interruption if a recipe-learning call already happened. {outcome} is that attempt's result.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:201 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.learn.after_attempt"
+msgid "The recipe call was already attempted: {outcome}. Closing or changing radius does not undo it."
+msgstr "レシピの習得はすでに試行済みです（結果：{outcome}）。ウィンドウを閉じたり半径を変えたりしても、その操作は取り消せません。"
+
+#. Status when changing the ship radius cancels the ongoing paint count. Reopening starts a count for the new range.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:221 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.cancel.radius_changed"
+msgid "Range changed. Reopen the window to count paint in the new range."
+msgstr "範囲が変わりました。ウィンドウを開き直して新しい範囲の塗料を数え直してください。"
+
+#. Fallback cancellation reason for a stopped refresh when no more specific player-facing explanation is available.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:223 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.cancel.default"
+msgid "Refresh cancelled"
+msgstr "更新をキャンセルしました"
+
+#. Cancellation reason when closing PaintManager interrupts an operation. A transfer receipt can include this message.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:225 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.cancel.window_closed"
+msgid "Window closed; unfinished refresh cancelled"
+msgstr "ウィンドウが閉じられたため、実行中の更新をキャンセルしました"
+
+#. Cancellation reason when the player closes the window while an action is still in the queue.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:227 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.cancel.before_start"
+msgid "Window closed; command cancelled before starting"
+msgstr "ウィンドウが閉じられたため、実行前のコマンドをキャンセルしました"
+
+#. Shown if the player changes a preference or favorite before preferences have loaded.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:238 src/PaintManager/Scripts/main.lua
+msgctxt "main.settings.not_ready"
+msgid "Wait for preferences to finish loading."
+msgstr "設定の読み込みが終わるまでお待ちください。"
+
+#. Saving a setting or favorite was rejected because too many changes are already queued.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:240 src/PaintManager/Scripts/main.lua
+msgctxt "main.settings.queue_full"
+msgid "Too many pending changes. Try again shortly."
+msgstr "保留中の変更が多すぎます。少し待ってからもう一度お試しください。"
+
+#. An invalid preference was rejected; also used for an invalid backpack target when gathering paint.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:242 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/transfer_controls.lua
+msgctxt "main.settings.invalid"
+msgid "This setting is unavailable."
+msgstr "この設定は利用できません。"
+
+#. Favorite action rejected because PaintManager cannot identify the selected paint reliably yet.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:244 src/PaintManager/Scripts/main.lua
+msgctxt "main.settings.invalid_paint"
+msgid "This paint cannot be added to favorites yet."
+msgstr "この塗料はまだお気に入りに追加できません。"
+
+#. Preference write failed or could not be verified. {error} is the returned reason.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:246 src/PaintManager/Scripts/main.lua
+#, python-brace-format
+msgctxt "main.settings.failed"
+msgid "Preferences could not be confirmed: {error}"
+msgstr "設定を確認できませんでした：{error}"
+
+#. Cancellation notice after the player hides developer tools using the checkbox in ordinary Settings.
+#: src/PaintManager/Scripts/paintmanager/locales/en_main.lua:251 src/PaintManager/Scripts/main.lua src/PaintManager/Scripts/paintmanager/player_messages.lua
+msgctxt "main.settings.developer_hidden"
+msgid "Developer tools were hidden."
+msgstr "開発者ツールを非表示にしました。"

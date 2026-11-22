@@ -24,8 +24,9 @@ The [CI workflow](../../.github/workflows/ci.yml) defines the automatic checks. 
 ## Translate player text
 
 1. Add an English string under a stable key in `src/PaintManager/Scripts/paintmanager/locales/en_ui.lua` or `en_main.lua`. Precede each player-facing key with a `-- TRANSLATORS:` usage comment. Use named placeholders and describe their meaning. Declare a plural selector for counts that affect grammar.
-2. Run `tools/localization.py --template` with the virtual environment's Python. In Poedit, update the target PO from `translations/PaintManager.pot`, translate entries and review fuzzy matches.
-3. Run `tools/localization.py` to regenerate Lua overlays, then `tools/manage.py check`. Register a new language in `languages.lua` and implement and test its plural categories in the runtime and compiler as needed.
+2. Run `tools/localization.py --template` with the virtual environment's Python. In Poedit, update each affected PO from `translations/PaintManager.pot`, translate the new or changed entries and review fuzzy matches.
+3. To add a language, register its culture tag and integer plural rule in `tools/localization.py`. Use the same tag in the PO filename and its `Language` header. Translate `ui.settings.language_name` into the language's own name for the Settings selector. Add regional aliases in `languages.lua` or plural rules in the compiler and `i18n.lua` when the new language needs them.
+4. Run `tools/localization.py` to regenerate the Lua overlays and the language index used by Settings. Run `tools/manage.py check` and the gettext tests to verify the generated text, placeholders and plural forms. The [player guide](../gamers/guide.md#language) lists the supported languages and regional variants.
 
 ## Try a local build
 

@@ -27,7 +27,7 @@ class GettextCatalogTests(unittest.TestCase):
             (root / "translations").mkdir()
             path = root / "translations/ru.po"
             po.save(str(path))
-            module = localization.compile_catalog(root, "ru", pot)
+            module, _ = localization.compile_catalog(root, "ru", pot)
             self.assertNotIn('"ui.transfer.gather_target"', module)
             self.assertNotIn('"ui.button.close"', module)
             label.flags.remove("fuzzy")
@@ -36,31 +36,44 @@ class GettextCatalogTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "placeholder mismatch"):
                 localization.compile_catalog(root, "ru", pot)
 
-    def test_every_russian_message_matches_gnu_gettext_in_game_runtime(self):
+    def test_every_shipped_message_matches_gnu_gettext_in_lua(self):
         localization.generate(ROOT, check=True)
         pot = polib.pofile(str(ROOT / "translations/PaintManager.pot"))
-        ru = polib.pofile(str(ROOT / "translations/ru.po"))
-        self.assertEqual(ru.percent_translated(), 100)
-        self.assertEqual({e.msgctxt for e in pot}, {e.msgctxt for e in ru if not e.obsolete})
+        keys = {entry.msgctxt for entry in pot}
         self.assertTrue(all(e.comment and e.occurrences for e in pot))
-        gnu = gettext.GNUTranslations(io.BytesIO(ru.to_binary()))
         lua = LuaRuntime(unpack_returned_tuples=True)
         lua.globals().scripts = (ROOT / "src/PaintManager/Scripts").as_posix()
-        lua.execute('package.path=scripts.."/?.lua;"..package.path; i=require("paintmanager.i18n"); i.select("ru")')
+        lua.execute('package.path=scripts.."/?.lua;"..package.path; i=require("paintmanager.i18n")')
         render = lua.eval("i.text")
         plurals = lua.eval('require("paintmanager.locales.en_plurals")')
-        for entry in ru:
-            with self.subTest(key=entry.msgctxt):
-                values = {arg: "{value} 10%" for arg in localization.arguments(entry.msgid)}
-                if entry.msgid_plural:
-                    for n in (0, 1, 2, 5, 11, 12, 14, 20, 21, 22, 51, 101, 111, 112):
-                        values[plurals[entry.msgctxt]["count"]] = n
-                        text = gnu.npgettext(entry.msgctxt, entry.msgid, entry.msgid_plural, n)
+        # Cultures in the installed build's Game.locmeta, including the two Spanish catalogs.
+        supported = {"de", "en", "es-419", "es-ES", "fi", "fr", "it", "ja", "pl", "pt-BR",
+                     "ru", "sv-FI", "uk", "zh-Hans"}
+        choices = lua.eval('require("paintmanager.languages").choices')
+        self.assertEqual(set(choices.values()), supported | {"auto"})
+        self.assertEqual(set(localization.LANGUAGES), supported - {"en"})
+        self.assertEqual({path.stem for path in (ROOT / "translations").glob("*.po")}, supported - {"en"})
+        select_catalog = lua.eval('function(code) i.select("auto",code); return require("paintmanager.locales."..code) end')
+        for code in localization.LANGUAGES:
+            po = polib.pofile(str(ROOT / f"translations/{code}.po"))
+            self.assertEqual(po.percent_translated(), 100, code)
+            self.assertEqual({e.msgctxt for e in po if not e.obsolete}, keys, code)
+            catalog = select_catalog(code)
+            self.assertEqual(lua.eval("i.language"), code)
+            self.assertEqual(set(catalog.keys()), keys, code)
+            self.assertEqual(lua.eval("i.language_name")(code), render("ui.settings.language_name"))
+            gnu = gettext.GNUTranslations(io.BytesIO(po.to_binary()))
+            for entry in po:
+                with self.subTest(language=code, key=entry.msgctxt):
+                    values = {arg: "{value} 10%" for arg in localization.arguments(entry.msgid)}
+                    if entry.msgid_plural:
+                        for n in (0, 1, 2, 4, 5, 11, 12, 14, 20, 21, 22, 51, 101, 111, 112, 114, 124):
+                            values[plurals[entry.msgctxt]["count"]] = n
+                            text = gnu.npgettext(entry.msgctxt, entry.msgid, entry.msgid_plural, n)
+                            self.assertEqual(render(entry.msgctxt, lua.table_from(values)), text.format_map(values))
+                    else:
+                        text = gnu.pgettext(entry.msgctxt, entry.msgid)
                         self.assertEqual(render(entry.msgctxt, lua.table_from(values)), text.format_map(values))
-                else:
-                    text = gnu.pgettext(entry.msgctxt, entry.msgid)
-                    self.assertEqual(render(entry.msgctxt, lua.table_from(values)), text.format_map(values))
-        keys = {entry.msgctxt for entry in pot}
         self.assertIn("ui.settings.developer", keys)
         self.assertFalse(any(key.startswith(("ui.debug.", "ui.processing.", "main.processing.")) for key in keys))
         self.assertNotIn("ui.tab.debug", keys)

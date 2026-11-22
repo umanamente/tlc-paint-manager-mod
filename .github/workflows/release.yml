@@ -118,9 +118,10 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: refs/tags/${{ needs.github.outputs.tag }}
+          ref: ${{ github.sha }}
+          fetch-depth: 0
           persist-credentials: false
-      - name: Download GitHub assets, check SHA-256 and inspect existing Nexus versions
+      - name: Verify the release ZIP and stage the changelog on Nexus
         id: nexus
         env:
           GH_TOKEN: ${{ github.token }}
@@ -135,10 +136,15 @@ jobs:
         with:
           api_key: ${{ secrets.NEXUSMODS_API_KEY }}
           file_id: ${{ vars.NEXUSMODS_FILE_ID }}
-          mod_id: ${{ vars.NEXUSMODS_MOD_ID }}
           filename: ${{ steps.nexus.outputs.archive }}
           display_name: PaintManager ${{ steps.nexus.outputs.version }}
           version: ${{ steps.nexus.outputs.version }}
           category: main
           update_mod_version: true
-          changelog: ${{ steps.nexus.outputs.notes }}
+      - name: Add the changelog if Nexus required the new file first
+        if: steps.nexus.outputs.changelog_after_upload == 'true'
+        env:
+          NEXUSMODS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          NEXUSMODS_MOD_ID: ${{ vars.NEXUSMODS_MOD_ID }}
+          TAG: ${{ needs.github.outputs.tag }}
+        run: python3 tools/release.py nexus-changelog "$TAG"

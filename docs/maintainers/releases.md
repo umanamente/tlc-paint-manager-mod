@@ -26,7 +26,9 @@ The highest applicable change wins. The analyzer accounts for matching revert pa
 1. The runner checks out the exact commit that passed CI. A newer `main` commit receives its own run.
 2. The workflow uses semantic-release to calculate the next version and generate release notes. It writes the version to `mod.json` and the Lua config, adds a changelog section, checks translations and Lua, runs the tests, then builds the package.
 3. A single atomic Git push advances `main` to the release commit and creates the tag. Concurrent changes to `main` cause the push to fail safely. GitHub receives a draft, the ZIP and its manifest. The workflow downloads and verifies the files before publishing the draft.
-4. The Nexus job downloads the two published assets, checks the ZIP against the manifest and reads the versions of the configured Nexus file. The official Nexus action uploads the verified ZIP, sets the mod version and optionally adds its changelog.
+4. The Nexus job downloads the two GitHub assets, checks the ZIP against the manifest and reads the versions of the configured Nexus file. When `NEXUSMODS_MOD_ID` is set, the job reads the mod's changelog and preserves an existing entry for this version. For a missing entry, it sends the tagged release notes as one plain-text change per line and reads them back. The official upload action then publishes the ZIP and updates the mod version. [Nexus changelog API](https://api-docs.nexusmods.com/#tag/mods/operation/getModChangelogs)
+
+   This order puts the notes on Nexus before the mod page receives the new file version. If Nexus explicitly rejects the early write with HTTP 422, the job publishes the file first and then reconciles the changelog. In 0.2.1 the upload finished before Nexus accepted the notes, and the website showed the previous changelog until an editor save. The API confirms the stored text. Nexus does not document when the website refreshes **Description → Changelogs**.
 
 ## Retry an existing tag
 
@@ -34,7 +36,7 @@ Choose **Actions → Release → Run workflow** on `main` and enter the existing
 
 - A complete GitHub release reuses its uploaded assets. A missing asset is rebuilt from the tag on Windows, compared against any existing asset and uploaded. Retrying will also finish a verified draft. A hash mismatch requires inspection of the conflicting assets.
 - When the Nexus version already exists, the workflow skips uploading it again. Nexus lists the version string in this check. To investigate conflicting payloads, download the Nexus file and compare its SHA-256 to the GitHub manifest. An existing newer stable version blocks an older upload.
-- If Nexus accepted the file before a changelog failure, check its changelog and restore the missing entry on the mod page. Keep the existing file version.
+- A retry uses the current workflow's tools and the selected tag's release notes. If only the changelog was saved, the retry keeps it and finishes the file upload. If only the file was saved, the retry can add the missing changelog. An uncertain response to a changelog write triggers read-only checks. If verification times out, inspect the version in **Manage → Documentation → Changelog** before retrying. Repeating the changelog POST appends text. [Nexus write semantics](https://api-docs.nexusmods.com/#tag/mods/operation/addModChangelogEntries)
 - To add a missing GitHub release for the initial version, supply `v0.2.0`. Nexus setup for that tag is always manual.
 
 ## Verify release tooling locally

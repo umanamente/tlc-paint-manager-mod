@@ -58,11 +58,11 @@ class DepositMainTests(unittest.TestCase):
             local ui_module=require("paintmanager.ui")
             ui_module.make_deposit_button=function(tree,serial,key,stock,resources)
                 assert(tree=="tree" and key=="label" and stock=="stock" and resources)
-                return "bucket",serial+1
+                return "deposit_button",serial+1
             end
             start()
             local button,serial=callbacks.make_button("tree",11,"label","stock")
-            assert(button=="bucket" and serial==12)
+            assert(button=="deposit_button" and serial==12)
         ''')
 
     def test_stock_hook_waits_for_current_players_preferences_without_opening_window(self):

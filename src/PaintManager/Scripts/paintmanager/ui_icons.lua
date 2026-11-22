@@ -326,7 +326,7 @@ end
 -- This image lives in the game's open box, independently of PaintManager's
 -- window targets. Its owner requests at most one resource unit per pump.
 function Icons:bind_deposit_icon(image, budget)
-    local entry = self:_entry("deposit_bucket")
+    local entry = self:_entry("deposit_paint_can")
     if not entry or entry.phase == "failed" or not safe.valid(image) then return true end
     if entry.phase == "done" then
         if safe.valid(entry.texture) then

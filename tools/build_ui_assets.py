@@ -1,4 +1,4 @@
-"""Build the geometric, style C and Lucide paint-bucket control images.
+"""Build the geometric, style C and paint can control images.
 
 PNG resources and the bounded embedded Lua buffers share checked source artwork.
 Runtime loading uses the embedded buffers, avoiding synchronous mod-file reads.
@@ -15,7 +15,6 @@ import struct
 import zlib
 
 from PIL import Image
-from resvg_py import svg_to_bytes
 
 ROOT = Path(__file__).resolve().parents[1]
 SIZE, SAMPLE = 128, 2
@@ -107,6 +106,30 @@ def png(shapes: list) -> bytes:
             +chunk(b"IDAT", zlib.compress(rows, 9))+chunk(b"IEND", b""))
 
 
+def control_png(image: Image.Image) -> bytes:
+    alpha = image.getchannel("A")
+    # Ignore almost invisible extraction specks when locating the silhouette.
+    bounds = alpha.point(lambda value: 255 if value >= 16 else 0).getbbox()
+    if not bounds or alpha.getextrema()[0] != 0:
+        raise ValueError("Control artwork needs an isolated transparent silhouette")
+    image = image.crop(bounds)
+    image.thumbnail((116, 116), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
+    canvas.alpha_composite(image, ((SIZE - image.width) // 2, (SIZE - image.height) // 2))
+    # A fixed palette bounds bytes while preserving multicolor enamel and
+    # antialiased alpha. Convert back to RGBA8 for the pinned native importer.
+    canvas = canvas.quantize(colors=128, method=Image.Quantize.FASTOCTREE,
+                             dither=Image.Dither.NONE).convert("RGBA")
+    pixels = list(canvas.get_flattened_data())
+    canvas.putdata([(r, g, b, a) if a else (0, 0, 0, 0) for r, g, b, a in pixels])
+    output = io.BytesIO()
+    canvas.save(output, format="PNG", compress_level=9, optimize=False)
+    data = output.getvalue()
+    if len(data) > 32768:
+        raise ValueError("Control artwork exceeds its bounded PNG cap")
+    return data
+
+
 def approved_overrides(root: Path) -> tuple[dict[str, bytes], str]:
     directory = root / "artwork/ui/style-c"
     manifest_path = directory / "source-manifest.json"
@@ -148,27 +171,7 @@ def approved_overrides(root: Path) -> tuple[dict[str, bytes], str]:
             if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
                 raise ValueError("Approved artwork crop exceeds source")
             image = image.crop(region)
-        alpha = image.getchannel("A")
-        # Ignore almost invisible extraction specks when locating the silhouette.
-        bounds = alpha.point(lambda value: 255 if value >= 16 else 0).getbbox()
-        if not bounds or alpha.getextrema()[0] != 0:
-            raise ValueError("Approved artwork needs an isolated transparent silhouette")
-        image = image.crop(bounds)
-        image.thumbnail((116, 116), Image.Resampling.LANCZOS)
-        canvas = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
-        canvas.alpha_composite(image, ((SIZE - image.width) // 2, (SIZE - image.height) // 2))
-        # A fixed palette bounds bytes while preserving multicolor enamel and
-        # antialiased alpha. Convert back to RGBA8 for the pinned native importer.
-        canvas = canvas.quantize(colors=128, method=Image.Quantize.FASTOCTREE,
-                                 dither=Image.Dither.NONE).convert("RGBA")
-        pixels = list(canvas.get_flattened_data())
-        canvas.putdata([(r, g, b, a) if a else (0, 0, 0, 0) for r, g, b, a in pixels])
-        output = io.BytesIO()
-        canvas.save(output, format="PNG", compress_level=9, optimize=False)
-        data = output.getvalue()
-        if len(data) > 32768:
-            raise ValueError("Approved runtime artwork exceeds its bounded PNG cap")
-        result[identity] = data
+        result[identity] = control_png(image)
     return result, hashlib.sha256(raw).hexdigest()
 
 
@@ -178,11 +181,14 @@ def outputs(root: Path) -> dict[Path, bytes]:
     overrides, source_hash = approved_overrides(root)
     for name, data in overrides.items():
         result[directory / f"{name}.png"] = data
-    bucket = (root / "artwork/ui/deposit/paint-bucket.svg").read_bytes()
-    result[directory / "deposit_bucket.png"] = bytes(svg_to_bytes(svg_string=bucket.decode("utf-8")))
-    manifest = {"schemaVersion": 1, "source": "Original geometric controls, approved style C artwork and the Lucide paint bucket",
+    paint_can = (root / "artwork/ui/deposit/paint-can.png").read_bytes()
+    with Image.open(io.BytesIO(paint_can)) as image:
+        if image.format != "PNG" or image.mode != "RGBA":
+            raise ValueError("The paint can source must be an RGBA PNG")
+        result[directory / "deposit_paint_can.png"] = control_png(image)
+    manifest = {"schemaVersion": 1, "source": "Original geometric controls, style C artwork and paint can",
                 "artworkSourceSha256": source_hash,
-                "depositBucketSourceSha256": hashlib.sha256(bucket).hexdigest(),
+                "depositPaintCanSourceSha256": hashlib.sha256(paint_can).hexdigest(),
                 "width": SIZE, "height": SIZE,
                 "icons": {path.stem: {"file": path.name, "sha256": hashlib.sha256(data).hexdigest()}
                           for path, data in result.items()}}

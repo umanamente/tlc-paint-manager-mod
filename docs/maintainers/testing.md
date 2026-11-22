@@ -12,7 +12,7 @@ Use a backed-up test save and the candidate release ZIP. Record the mod version,
 | Load and lose signal | Read the three paint tabs, move beyond the selected radius, then return and reopen. Confirm the disconnected view clears and loaded boxes are counted again. |
 | Learn | With four matching cans, note backpack and box totals. Use **Learn** on one locked recipe. Check membership in the game's own interface and compare the same inventory totals afterward. |
 | Gather and return | Top up a color from two identified boxes and return the borrowed cans. Check both quantities and original destinations. Try a full destination, then cancel a bulk operation between moves. |
-| Deposit | With a box that already contains paint, try **Deposit similar** with its grouping option on and off. Enable the independent bucket option, deposit paint and verify non-paint items remain in the backpack. |
+| Deposit | With a box that already contains paint, try **Deposit similar** with its grouping option on and off. Enable **Show Deposit all paints button**, click the paint can and verify non-paint items remain in the backpack. |
 | Presets and persistence | Save one ship scheme and one character scheme. Apply a changed layout with a free backpack slot. Inspect both the equipped and removed cans. Make an ordinary game save, restart and reload, then check the presets and settings again. |
 | UI and localization | Switch between English, Russian and the game language. Inspect long settings captions and help at narrow and wide sizes. Leave the window open for several minutes, switch tabs and check input and textures. |
 | Remove | Close the game and remove the mod via the installation method used. Confirm that the test save can be opened and the usual game controls work. |

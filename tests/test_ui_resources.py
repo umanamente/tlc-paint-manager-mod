@@ -160,7 +160,7 @@ class UIResourceTests(unittest.TestCase):
         local find=StaticFindObject
         local library=object("RenderingLibrary",false)
         function library:ImportBufferAsTexture2D(tree,bytes)
-            local expected=require("paintmanager.ui_icon_data").deposit_bucket
+            local expected=require("paintmanager.ui_icon_data").deposit_paint_can
             assert(tree.kind=="Tree" and #bytes==#expected/2)
             for index,byte in ipairs(bytes) do
                 assert(byte==tonumber(expected:sub(index*2-1,index*2),16))

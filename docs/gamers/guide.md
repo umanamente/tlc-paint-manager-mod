@@ -13,7 +13,7 @@ Learning requires four matching physical cans across eligible storage and the ba
 - **Top up** brings the selected color from ship boxes into your backpack. The target counts cans you already carry. With a target of five and two in your backpack, the mod looks for up to three more. In **Settings**, choose one, five, a custom number or all available cans of that color.
 - **Move all paints to backpack** handles every color, including duplicates, until a slot or weight limit prevents further transfers.
 - **Return to original box** sends a borrowed can back. **Return all paints to boxes** also works on the **Signal lost** screen. Each original box must still be loaded and accessible with room for the return. Moving or mixing stacks yourself can make their origins impossible to verify. The result reports confirmed moves and skips.
-- In an open player box that already contains paint, **Group all colors in Deposit similar** lets the game's deposit action accept every paint color from your backpack. The setting defaults on. **Show Deposit all paints button** is a separate option, off by default. Enable it to show the bucket button when both inventories contain paint.
+- In an open player box that already contains paint, **Group all colors in Deposit similar** lets the game's deposit action accept every paint color from your backpack. The setting defaults on. **Show Deposit all paints button** is a separate option, off by default. Enable it to show a paint can beside **Deposit all paints** when both inventories contain paint.
 
 ## Save and apply a paint scheme
 

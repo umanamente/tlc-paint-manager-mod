@@ -27,12 +27,15 @@ PLAYER_GUIDES = ("installation.md", "guide.md", "troubleshooting.md")
 GAME_PROCESSES = ("Voyage", "VoyageSteam-Win64-Shipping")
 NATIVE_SUFFIXES = frozenset((".dll", ".so", ".dylib", ".exe"))
 LEGACY_COMPANION_FILES = frozenset(("dlls/main.dll", "dlls/worker-provenance.json"))
-# Only explicitly retired runtime modules may leave deployment ownership.
-# Other obsolete files still require review and are never deleted implicitly.
-RETIRED_LUA_FILES = frozenset(("Scripts/paintmanager/background_wire.lua",
-                               "Scripts/paintmanager/background_reader.lua",
-                               "Scripts/paintmanager/ui_input.lua",
-                               "Scripts/paintmanager/worker_paint_cache.lua"))
+# Files eligible for removal only when the previous install manifest owns their exact bytes.
+RETIRED_FILES = frozenset((
+    "Scripts/paintmanager/background_wire.lua",
+    "Scripts/paintmanager/background_reader.lua",
+    "Scripts/paintmanager/ui_input.lua",
+    "Scripts/paintmanager/worker_paint_cache.lua",
+    "Assets/UI/deposit_bucket.png",
+    "THIRD_PARTY_NOTICES.md",
+))
 
 
 class ToolError(RuntimeError):
@@ -141,7 +144,7 @@ def checked_sources(root: Path = ROOT) -> tuple[dict, list[Path]]:
 UI_ICON_IDS = frozenset(("refresh", "close", "clear", "star", "star_filled", "learned", "ready",
                          "missing", "settings", "debug", "search", "sort", "learn", "presets",
                          "save", "apply", "delete", "import", "back", "learned_detailed", "ready_detailed",
-                         "to_backpack", "to_box", "deposit_bucket"))
+                         "to_backpack", "to_box", "deposit_paint_can"))
 UI_ICON_MAX_BYTES = 32768
 UI_SIGNAL_WIDTH, UI_SIGNAL_HEIGHT = 1024, 512
 UI_SIGNAL_BYTES = 118144
@@ -379,7 +382,7 @@ def payload(root: Path = ROOT) -> tuple[dict, dict[str, bytes]]:
     scripts = root / "src" / MOD_ID / "Scripts"
     result = {"Scripts/" + file.relative_to(scripts).as_posix(): file.read_bytes() for file in files}
     gamer_docs = "docs/gamers"
-    release_paths = ["LICENSE", "THIRD_PARTY_NOTICES.md", "mod.json"]
+    release_paths = ["LICENSE", "mod.json"]
     release_paths.extend(f"{gamer_docs}/{name}" for name in ("README.md", *PLAYER_GUIDES))
     for name in release_paths:
         path = owned_path(root, name)
@@ -588,7 +591,7 @@ def verified_legacy_removals(target: Path, previous: dict | None, metadata: dict
     """Authorize only manifest/hash-verified files explicitly retired by PaintManager."""
     old_files = previous["files"] if previous else {}
     obsolete = set(old_files) - set(files)
-    allowed = LEGACY_COMPANION_FILES | RETIRED_LUA_FILES
+    allowed = LEGACY_COMPANION_FILES | RETIRED_FILES
     if obsolete - allowed:
         raise ToolError("Obsolete owned files require explicit review, no files deleted: " +
                         ", ".join(sorted(obsolete - allowed)))

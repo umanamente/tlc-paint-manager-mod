@@ -33,4 +33,4 @@ The reference environment is the Windows Steam build **25982825** of The Last Ca
 - For contributors, see [getting started](CONTRIBUTING.md), the [code map and architecture decisions](docs/maintainers/architecture.md), [testing](docs/maintainers/testing.md) and [releases](docs/maintainers/releases.md).
 - For AI agents, see the [project instructions](AGENTS.md) and [working guide](docs/ai/working-guide.md).
 
-See the [changelog](CHANGELOG.md) for the release contents. PaintManager code is distributed under the [MIT license](LICENSE). The paint-bucket icon has its own [third-party notice](THIRD_PARTY_NOTICES.md).
+See the [changelog](CHANGELOG.md) for the release contents. PaintManager code is distributed under the [MIT license](LICENSE).

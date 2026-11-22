@@ -1,6 +1,6 @@
 {
   "artworkSourceSha256": "10e7f618c860d11335a3231543a37767178e9aa723f41fd36c6018524c6bfbaa",
-  "depositBucketSourceSha256": "7597828b19de5ed610865b53d21b420c9e46d170dca4cc8e17a90ed3f462676d",
+  "depositPaintCanSourceSha256": "57b03accb0da0c106d2c2ba0078e2f69e6bceda1e3bd248081763a8b89282cdd",
   "height": 128,
   "icons": {
     "apply": {
@@ -27,9 +27,9 @@
       "file": "delete.png",
       "sha256": "850009354660138b44409a78512af092b8d0ae8abb31dd7704562401a1acd7ee"
     },
-    "deposit_bucket": {
-      "file": "deposit_bucket.png",
-      "sha256": "63a23bdca0f97f14ccf416e6582c9685bf8c48080d1327558541f10261fbd71f"
+    "deposit_paint_can": {
+      "file": "deposit_paint_can.png",
+      "sha256": "50f0839ce02b701d9c80030fa0fc78b7936e6850ad33b09a0c30d4a6fb2fcef9"
     },
     "import": {
       "file": "import.png",
@@ -101,6 +101,6 @@
     }
   },
   "schemaVersion": 1,
-  "source": "Original geometric controls, approved style C artwork and the Lucide paint bucket",
+  "source": "Original geometric controls, style C artwork and paint can",
   "width": 128
 }

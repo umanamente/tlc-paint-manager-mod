@@ -71,7 +71,7 @@ class UiAssetValidationTests(unittest.TestCase):
 
     def test_control_family_and_inclusive_32k_png_limit_are_accepted(self):
         self.assertEqual(len(self.manage.UI_ICON_IDS), 24)
-        self.assertTrue({"to_backpack", "to_box", "deposit_bucket"}.issubset(self.manage.UI_ICON_IDS))
+        self.assertTrue({"to_backpack", "to_box", "deposit_paint_can"}.issubset(self.manage.UI_ICON_IDS))
         self.assertIn("learned_detailed", self.manage.UI_ICON_IDS)
         self.assertIn("ready_detailed", self.manage.UI_ICON_IDS)
         self.replace_icon(self.png(length=32768))

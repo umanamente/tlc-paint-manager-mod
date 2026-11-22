@@ -18,7 +18,6 @@ def write_player_docs(root):
     docs = root / "docs/gamers"
     docs.mkdir(parents=True)
     (root / "LICENSE").write_bytes(b"Fixture license")
-    (root / "THIRD_PARTY_NOTICES.md").write_bytes(b"Fixture notices")
     links = []
     for name in ("installation.md", "guide.md", "troubleshooting.md"):
         (docs / name).write_bytes(f"Player guide {name}".encode())
@@ -83,7 +82,7 @@ class ToolingTests(unittest.TestCase):
         with self.assertRaisesRegex(manage.ToolError, "reference_build.*matching mod.json"):
             manage.checked_sources(self.root)
 
-    def test_package_includes_only_player_docs_and_licenses(self):
+    def test_package_includes_only_player_docs_and_project_license(self):
         self.source_fixture()
         write_player_docs(self.root)
         (self.root / "README.md").write_text("Source repository", encoding="utf-8")
@@ -99,8 +98,7 @@ class ToolingTests(unittest.TestCase):
         for name in ("installation.md", "guide.md", "troubleshooting.md"):
             self.assertIn(f"](docs/gamers/{name})".encode(), files["README.md"])
         self.assertEqual(files["LICENSE"], b"Fixture license")
-        self.assertEqual(files["THIRD_PARTY_NOTICES.md"], b"Fixture notices")
-        (self.root / "THIRD_PARTY_NOTICES.md").unlink()
+        (self.root / "LICENSE").unlink()
         with self.assertRaisesRegex(manage.ToolError, "Missing release file"):
             manage.payload(self.root)
 
@@ -166,6 +164,23 @@ class ToolingTests(unittest.TestCase):
         with self.assertRaisesRegex(manage.ToolError, "Obsolete"):
             manage.deployment_plan(self.game, self.metadata, self.files)
         self.assertTrue((self.target / "Scripts" / "old.lua").is_file())
+
+    def test_paint_control_upgrade_replaces_owned_files_with_backup(self):
+        retired = {"Assets/UI/deposit_bucket.png": b"previous control", "THIRD_PARTY_NOTICES.md": b"previous notice"}
+        self.install_fixture({**self.files, **retired})
+        icon = "Assets/UI/deposit_paint_can.png"
+        updated = {**self.files, icon: b"new control"}
+        with patch.object(manage, "payload", return_value=(self.metadata, updated)), patch.object(manage, "running_game_processes", return_value=[]):
+            result = manage.deploy(self.game, apply=True, root=self.root)
+            retry = manage.deploy(self.game, root=self.root)
+        self.assertEqual(set(result["removed_files"]), set(retired))
+        self.assertEqual(retry["removed_files"], [])
+        self.assertEqual((self.target / icon).read_bytes(), updated[icon])
+        backup = Path(result["backup"])
+        index = json.loads((backup / "index.json").read_text(encoding="utf-8"))
+        for name, content in retired.items():
+            self.assertFalse((self.target / name).exists())
+            self.assertEqual((backup / index["files"][name]).read_bytes(), content)
 
     def test_mid_install_failure_restores_original_bytes(self):
         self.install_fixture()

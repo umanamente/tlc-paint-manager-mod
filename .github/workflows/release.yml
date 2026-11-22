@@ -6,6 +6,9 @@ on:
       tested_sha:
         required: true
         type: string
+    secrets:
+      NEXUSMODS_API_KEY:
+        required: true
   workflow_dispatch:
     inputs:
       tag:

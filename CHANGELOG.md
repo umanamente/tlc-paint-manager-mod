@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+### Features
+
+* **i18n:** translate PaintManager into all 14 game interface languages ([c1b2681](https://github.com/umanamente/tlc-paint-manager-mod/commit/c1b268193e77aecaf3de488a91d00568141e6ef7))
+
 ## 0.2.1
 
 ### Bug Fixes

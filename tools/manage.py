@@ -391,6 +391,10 @@ def payload(root: Path = ROOT) -> tuple[dict, dict[str, bytes]]:
         result[name] = path.read_bytes()
     # Put the player index beside the mod and keep its links usable offline.
     readme = result.pop(f"{gamer_docs}/README.md").decode("utf-8")
+    banner = "Assets/Branding/readme-banner.png"
+    banner_source = f"src/{MOD_ID}/{banner}"
+    result[banner] = owned_path(root, banner_source).read_bytes()
+    readme = readme.replace(f'src="../../{banner_source}"', f'src="{banner}"')
     for guide in PLAYER_GUIDES:
         readme = readme.replace(f"]({guide})", f"]({gamer_docs}/{guide})")
     result["README.md"] = readme.encode("utf-8")

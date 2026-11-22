@@ -1,3 +1,5 @@
+<img src="src/PaintManager/Assets/Branding/readme-banner.png" alt="PaintManager for The Last Caretaker — a shipboard paint workshop" width="100%">
+
 # PaintManager
 
 PaintManager is a Lua mod for **The Last Caretaker**. See which paints you own, learn recipes from the cans you have collected, and save paint schemes for your ship and character.

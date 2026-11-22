@@ -18,7 +18,10 @@ def write_player_docs(root):
     docs = root / "docs/gamers"
     docs.mkdir(parents=True)
     (root / "LICENSE").write_bytes(b"Fixture license")
-    links = []
+    banner = "src/PaintManager/Assets/Branding/readme-banner.png"
+    (root / banner).parent.mkdir(parents=True, exist_ok=True)
+    (root / banner).write_bytes(b"Fixture banner")
+    links = [f'<img src="../../{banner}" width="100%">']
     for name in ("installation.md", "guide.md", "troubleshooting.md"):
         (docs / name).write_bytes(f"Player guide {name}".encode())
         links.append(f"[Read {name}]({name})")
@@ -97,6 +100,8 @@ class ToolingTests(unittest.TestCase):
         })
         for name in ("installation.md", "guide.md", "troubleshooting.md"):
             self.assertIn(f"](docs/gamers/{name})".encode(), files["README.md"])
+        self.assertTrue(files["README.md"].startswith(b'<img src="Assets/Branding/readme-banner.png"'))
+        self.assertEqual(files["Assets/Branding/readme-banner.png"], b"Fixture banner")
         self.assertEqual(files["LICENSE"], b"Fixture license")
         (self.root / "LICENSE").unlink()
         with self.assertRaisesRegex(manage.ToolError, "Missing release file"):

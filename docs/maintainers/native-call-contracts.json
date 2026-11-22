@@ -1,0 +1,4105 @@
+{
+  "referenceGameBuild": "25982825",
+  "ue4ssCommit": "527a483b63b4dd0104fe1ca1a3934a06b87fcfb2",
+  "parameterCapacity": 512,
+  "scope": "Static name inventory and same-build parameter envelopes; receiver/signature, ownership and actual runtime behavior require separate review. No native addresses or game assets.",
+  "loaderMethods": [
+    "ForEach",
+    "ForEachFunction",
+    "ForEachProperty",
+    "GetAddress",
+    "GetArrayNum",
+    "GetClass",
+    "GetFName",
+    "GetFullName",
+    "GetOuter",
+    "GetSuperStruct",
+    "GetWorld",
+    "HasAnyFlags",
+    "IsA",
+    "IsAnyClass",
+    "IsValid",
+    "ToString"
+  ],
+  "reflectedMethods": {
+    "GetCurrentLanguage": [
+      {
+        "path": "/Script/Engine.KismetInternationalizationLibrary:GetCurrentLanguage",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StrProperty"
+          }
+        ]
+      }
+    ],
+    "AddOption": [
+      {
+        "path": "/Script/UMG.ComboBoxString:AddOption",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Option",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StrProperty"
+          }
+        ]
+      }
+    ],
+    "GetSelectedIndex": [
+      {
+        "path": "/Script/UMG.ComboBoxString:GetSelectedIndex",
+        "size": 4,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "SetSelectedIndex": [
+      {
+        "path": "/Script/UMG.ComboBoxString:SetSelectedIndex",
+        "size": 4,
+        "properties": [
+          {
+            "name": "Index",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "GetActiveWidget": [
+      {
+        "path": "/Script/UMG.WidgetSwitcher:GetActiveWidget",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetSourceInventory": [
+      {
+        "path": "/Script/Voyage.VoyageContainerWidget:GetSourceInventory",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageInventoryWidget:GetSourceInventory",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetSourceComponent": [
+      {
+        "path": "/Script/Voyage.VoyageBaseBarWidget:GetSourceComponent",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "SetZOrder": [
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetZOrder",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InZOrder",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "AddChild": [
+      {
+        "path": "/Script/UMG.PanelWidget:AddChild",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Content",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "AddChildToCanvas": [
+      {
+        "path": "/Script/UMG.CanvasPanel:AddChildToCanvas",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Content",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "AddChildToUniformGrid": [
+      {
+        "path": "/Script/UMG.UniformGridPanel:AddChildToUniformGrid",
+        "size": 24,
+        "properties": [
+          {
+            "name": "Content",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InRow",
+            "offset": 8,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "InColumn",
+            "offset": 12,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 16,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "AddItem": [
+      {
+        "path": "/Game/UI/Game/Admin/BP_InspectDynamicMesh.BP_InspectDynamicMesh_C:AddItem",
+        "size": 200,
+        "properties": [
+          {
+            "name": "VoyageItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "Chance",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "DoubleProperty"
+          },
+          {
+            "name": "min",
+            "offset": 16,
+            "size": 4,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "IntProperty"
+          },
+          {
+            "name": "max",
+            "offset": 20,
+            "size": 4,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "IntProperty"
+          },
+          {
+            "name": "IsMaterial",
+            "offset": 24,
+            "size": 1,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "NameExtra",
+            "offset": 32,
+            "size": 16,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_HasGetValueTypeHash",
+            "type": "StrProperty"
+          },
+          {
+            "name": "Warning",
+            "offset": 48,
+            "size": 1,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ListView:AddItem",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Item",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:AddItem",
+        "size": 136,
+        "properties": [
+          {
+            "name": "NewItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InItemData",
+            "offset": 8,
+            "size": 120,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "bAllowStacking",
+            "offset": 128,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "bNotifyChanged",
+            "offset": 129,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 132,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "AddToViewport": [
+      {
+        "path": "/Script/UMG.UserWidget:AddToViewport",
+        "size": 4,
+        "properties": [
+          {
+            "name": "ZOrder",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_AdvancedDisplay | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "CanAddItem": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:CanAddItem",
+        "size": 16,
+        "properties": [
+          {
+            "name": "NewItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "CanAddToSlot": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:CanAddToSlot",
+        "size": 24,
+        "properties": [
+          {
+            "name": "SlotIndex",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "NewItem",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 16,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "CanRemoveSlot": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:CanRemoveSlot",
+        "size": 8,
+        "properties": [
+          {
+            "name": "SlotIndex",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 4,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "ClearChildren": [
+      {
+        "path": "/Script/UMG.PanelWidget:ClearChildren",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "Conv_GuidToString": [
+      {
+        "path": "/Script/Engine.KismetGuidLibrary:Conv_GuidToString",
+        "size": 32,
+        "properties": [
+          {
+            "name": "InGuid",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 16,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StrProperty"
+          }
+        ]
+      }
+    ],
+    "Create": [
+      {
+        "path": "/Script/UMG.WidgetBlueprintLibrary:Create",
+        "size": 32,
+        "properties": [
+          {
+            "name": "WorldContextObject",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "WidgetType",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_UObjectWrapper | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ClassProperty"
+          },
+          {
+            "name": "OwningPlayer",
+            "offset": 16,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 24,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "EstimateAddAmount": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:EstimateAddAmount",
+        "size": 16,
+        "properties": [
+          {
+            "name": "NewItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ItemCount",
+            "offset": 8,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 12,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "EstimateAddAmountToSlot": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:EstimateAddAmountToSlot",
+        "size": 24,
+        "properties": [
+          {
+            "name": "SlotIndex",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "NewItem",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ItemCount",
+            "offset": 16,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 20,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "GetAccurateRealTime": [
+      {
+        "path": "/Script/Engine.GameplayStatics:GetAccurateRealTime",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Seconds",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "PartialSeconds",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "DoubleProperty"
+          }
+        ]
+      }
+    ],
+    "GetAsset": [
+      {
+        "path": "/Script/AssetRegistry.AssetRegistryHelpers:GetAsset",
+        "size": 88,
+        "properties": [
+          {
+            "name": "InAssetData",
+            "offset": 0,
+            "size": 80,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 80,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/ChaosClothAssetEngine.ChaosClothComponent:GetAsset",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.DataLayerInstance:GetAsset",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Niagara.NiagaraComponent:GetAsset",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetCharacterOrDriver": [
+      {
+        "path": "/Script/Voyage.VoyageMiscBlueprintFunctionLibrary:GetCharacterOrDriver",
+        "size": 16,
+        "properties": [
+          {
+            "name": "NewPawn",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetComponentsBoundingBoxLocal": [
+      {
+        "path": "/Script/Voyage.VoyageMiscBlueprintFunctionLibrary:GetComponentsBoundingBoxLocal",
+        "size": 72,
+        "properties": [
+          {
+            "name": "Actor",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "bNonColliding",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "bIncludeChildren",
+            "offset": 9,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 16,
+            "size": 56,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "GetController": [
+      {
+        "path": "/Script/ControlRig.RigHierarchy:GetController",
+        "size": 16,
+        "properties": [
+          {
+            "name": "bCreateIfNeeded",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.Pawn:GetController",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetPlayerFocusWidget": [
+      {
+        "path": "/Script/Voyage.VoyagePlayerController:GetPlayerFocusWidget",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetCurrentChildWidget": [
+      {
+        "path": "/Script/Voyage.VoyageOverlayMenuWidget:GetCurrentChildWidget",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "GetDriver": [
+      {
+        "path": "/Script/Voyage.VoyageVehiclePawn:GetDriver",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetNextEmptySlot": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:GetNextEmptySlot",
+        "size": 4,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "GetFrameCount": [
+      {
+        "path": "/Script/Engine.KismetSystemLibrary:GetFrameCount",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "Int64Property"
+          }
+        ]
+      }
+    ],
+    "GetHUD": [
+      {
+        "path": "/Script/Engine.PlayerController:GetHUD",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetInventoryComponent": [
+      {
+        "path": "/Game/Blueprints/Rocket/BP_Rocket_Functional.BP_Rocket_Functional_C:GetInventoryComponent",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageBaseCharacter:GetInventoryComponent",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Type",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyagePlayerController:GetInventoryComponent",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Type",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageRocketActor:GetInventoryComponent",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetIsEnabled": [
+      {
+        "path": "/Script/UMG.Widget:GetIsEnabled",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "GetKey": [
+      {
+        "path": "/Script/Engine.KismetInputLibrary:GetKey",
+        "size": 96,
+        "properties": [
+          {
+            "name": "Input",
+            "offset": 0,
+            "size": 72,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 72,
+            "size": 24,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "GetLocalBounds": [
+      {
+        "path": "/Script/Engine.StaticMeshComponent:GetLocalBounds",
+        "size": 48,
+        "properties": [
+          {
+            "name": "min",
+            "offset": 0,
+            "size": 24,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "max",
+            "offset": 24,
+            "size": 24,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "GetObjectFromPrimaryAssetId": [
+      {
+        "path": "/Script/Engine.KismetSystemLibrary:GetObjectFromPrimaryAssetId",
+        "size": 24,
+        "properties": [
+          {
+            "name": "PrimaryAssetId",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 16,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetOverlayWidgetData": [
+      {
+        "path": "/Script/Voyage.VoyageOverlayMenuWidget:GetOverlayWidgetData",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "GetOwner": [
+      {
+        "path": "/Script/Engine.Actor:GetOwner",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.ActorComponent:GetOwner",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetOwningPlayerController": [
+      {
+        "path": "/Script/Engine.HUD:GetOwningPlayerController",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.PlayerCameraManager:GetOwningPlayerController",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetParent": [
+      {
+        "path": "/Script/UMG.Widget:GetParent",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "GetPersistentActorComponent": [
+      {
+        "path": "/Script/Voyage.VoyagePersistentSubsystem:GetPersistentActorComponent",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InActor",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "GetPersistentHudData": [
+      {
+        "path": "/Script/Voyage.VoyageBlueprintUIFunctionLibrary:GetPersistentHudData",
+        "size": 56,
+        "properties": [
+          {
+            "name": "InPlayerController",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InKey",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "NameProperty"
+          },
+          {
+            "name": "OutValue",
+            "offset": 16,
+            "size": 32,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 48,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "GetSaveGameRootDirectory": [
+      {
+        "path": "/Script/Voyage.VoyageSaveGame:GetSaveGameRootDirectory",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StrProperty"
+          }
+        ]
+      }
+    ],
+    "GetSaveGameUserId": [
+      {
+        "path": "/Game/UI/Game/HUD/BP_VoyageCheat_SavegameSlotWidget.BP_VoyageCheat_SavegameSlotWidget_C:GetSaveGameUserId",
+        "size": 56,
+        "properties": [
+          {
+            "name": "SaveGameUserId",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_HasGetValueTypeHash",
+            "type": "StrProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageSaveGame:GetSaveGameUserId",
+        "size": 24,
+        "properties": [
+          {
+            "name": "InLocalPlayer",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StrProperty"
+          }
+        ]
+      }
+    ],
+    "GetScrollOffset": [
+      {
+        "path": "/Script/UMG.ScrollBox:GetScrollOffset",
+        "size": 4,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "GetText": [
+      {
+        "path": "/Game/BP_OptionsDetailsWidget.BP_OptionsDetailsWidget_C:GetText",
+        "size": 332,
+        "properties": [
+          {
+            "name": "Widget",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "Value",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "DoubleProperty"
+          },
+          {
+            "name": "Text",
+            "offset": 16,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Consoles/BP_OpenDoorButton.BP_OpenDoorButton_C:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Consoles/InfoPECO/ContentConsoles/Vehicle/WBP_InfoConsole_Wind.WBP_InfoConsole_Wind_C:GetText",
+        "size": 152,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/HUD/BP_VoyageCheat_SavegameSlotWidget.BP_VoyageCheat_SavegameSlotWidget_C:GetText",
+        "size": 128,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableText:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableTextBox:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableText:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableTextBox:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.RichTextBlock:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:GetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      }
+    ],
+    "GetTransform": [
+      {
+        "path": "/Script/Engine.Actor:GetTransform",
+        "size": 96,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "GetViewTarget": [
+      {
+        "path": "/Script/Engine.Controller:GetViewTarget",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "GetViewportScale": [
+      {
+        "path": "/Script/UMG.WidgetLayoutLibrary:GetViewportScale",
+        "size": 16,
+        "properties": [
+          {
+            "name": "WorldContextObject",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "GetViewportSize": [
+      {
+        "path": "/Script/Engine.PlayerController:GetViewportSize",
+        "size": 8,
+        "properties": [
+          {
+            "name": "SizeX",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "SizeY",
+            "offset": 4,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WidgetLayoutLibrary:GetViewportSize",
+        "size": 24,
+        "properties": [
+          {
+            "name": "WorldContextObject",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageBlueprintLibrary:GetViewportSize",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "GetWidgetOwnerController": [
+      {
+        "path": "/Script/Voyage.VoyageBaseUserWidget:GetWidgetOwnerController",
+        "size": 8,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "HasActiveDialog": [
+      {
+        "path": "/Script/Voyage.VoyagePlayerController:HasActiveDialog",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "HasItem": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:HasItem",
+        "size": 16,
+        "properties": [
+          {
+            "name": "NewItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "ImportBufferAsTexture2D": [
+      {
+        "path": "/Script/Engine.KismetRenderingLibrary:ImportBufferAsTexture2D",
+        "size": 32,
+        "properties": [
+          {
+            "name": "WorldContextObject",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "Buffer",
+            "offset": 8,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "ArrayProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 24,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "IsChecked": [
+      {
+        "path": "/Script/UMG.CheckBox:IsChecked",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFocusableCheckBoxWidget:IsChecked",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsGamePaused": [
+      {
+        "path": "/Script/Engine.GameplayStatics:IsGamePaused",
+        "size": 16,
+        "properties": [
+          {
+            "name": "WorldContextObject",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsHovered": [
+      {
+        "path": "/Script/UMG.Widget:IsHovered",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "IsInViewport": [
+      {
+        "path": "/Script/UMG.Widget:IsInViewport",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsLevelLoaded": [
+      {
+        "path": "/Script/Engine.LevelStreaming:IsLevelLoaded",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsLevelVisible": [
+      {
+        "path": "/Script/Engine.LevelStreaming:IsLevelVisible",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsLocalController": [
+      {
+        "path": "/Script/Engine.Controller:IsLocalController",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsOverlayVisible": [
+      {
+        "path": "/Script/Voyage.VoyagePlayerController:IsOverlayVisible",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InWidgetData",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "IsPressed": [
+      {
+        "path": "/Script/UMG.Button:IsPressed",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.CheckBox:IsPressed",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsValidSlotIndex": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:IsValidSlotIndex",
+        "size": 8,
+        "properties": [
+          {
+            "name": "SlotIndex",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 4,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "IsVisible": [
+      {
+        "path": "/Script/UMG.Widget:IsVisible",
+        "size": 1,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic"
+          }
+        ]
+      }
+    ],
+    "K2_GetActorLocation": [
+      {
+        "path": "/Script/Engine.Actor:K2_GetActorLocation",
+        "size": 24,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 24,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "NewGuid": [
+      {
+        "path": "/Script/Engine.KismetGuidLibrary:NewGuid",
+        "size": 16,
+        "properties": [
+          {
+            "name": "ReturnValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "OnKeyUp": [
+      {
+        "path": "/Script/UMG.UserWidget:OnKeyUp",
+        "size": 312,
+        "properties": [
+          {
+            "name": "MyGeometry",
+            "offset": 0,
+            "size": 56,
+            "flags": "CPF_Parm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "InKeyEvent",
+            "offset": 56,
+            "size": 72,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 128,
+            "size": 184,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "OnPreviewKeyDown": [
+      {
+        "path": "/Script/UMG.UserWidget:OnPreviewKeyDown",
+        "size": 312,
+        "properties": [
+          {
+            "name": "MyGeometry",
+            "offset": 0,
+            "size": 56,
+            "flags": "CPF_Parm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "InKeyEvent",
+            "offset": 56,
+            "size": 72,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 128,
+            "size": 184,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "ScrollToEnd": [
+      {
+        "path": "/Script/UMG.ScrollBox:ScrollToEnd",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "RemoveFromParent": [
+      {
+        "path": "/Script/UMG.Widget:RemoveFromParent",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "RequestOverlayRemoval": [
+      {
+        "path": "/Script/Voyage.VoyageBaseMenuUserWidget:RequestOverlayRemoval",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "SetActiveWidgetIndex": [
+      {
+        "path": "/Script/UMG.WidgetSwitcher:SetActiveWidgetIndex",
+        "size": 4,
+        "properties": [
+          {
+            "name": "Index",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "SetAlignment": [
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetAlignment",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InAlignment",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageContextMenuWidget:SetAlignment",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InAlignment",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetAnchors": [
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetAnchors",
+        "size": 32,
+        "properties": [
+          {
+            "name": "InAnchors",
+            "offset": 0,
+            "size": 32,
+            "flags": "CPF_Parm | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetAutoSize": [
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetAutoSize",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InbAutoSize",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetAutoWrapText": [
+      {
+        "path": "/Script/UMG.RichTextBlock:SetAutoWrapText",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InAutoTextWrap",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:SetAutoWrapText",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InAutoTextWrap",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetBackgroundColor": [
+      {
+        "path": "/Script/AudioWidgets.AudioMeter:SetBackgroundColor",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InValue",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/NamingTokensUI.NamingTokensEditableText:SetBackgroundColor",
+        "size": 20,
+        "properties": [
+          {
+            "name": "InColor",
+            "offset": 0,
+            "size": 20,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Button:SetBackgroundColor",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InBackgroundColor",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WidgetComponent:SetBackgroundColor",
+        "size": 16,
+        "properties": [
+          {
+            "name": "NewBackgroundColor",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetBrushColor": [
+      {
+        "path": "/Script/UMG.Border:SetBrushColor",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InBrushColor",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetBrushFromTexture": [
+      {
+        "path": "/Script/UMG.Border:SetBrushFromTexture",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Texture",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Image:SetBrushFromTexture",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Texture",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "bMatchSize",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetClipping": [
+      {
+        "path": "/Script/UMG.Widget:SetClipping",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InClipping",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      }
+    ],
+    "SetColorAndOpacity": [
+      {
+        "path": "/Script/UMG.Button:SetColorAndOpacity",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InColorAndOpacity",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Image:SetColorAndOpacity",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InColorAndOpacity",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:SetColorAndOpacity",
+        "size": 20,
+        "properties": [
+          {
+            "name": "InColorAndOpacity",
+            "offset": 0,
+            "size": 20,
+            "flags": "CPF_Parm | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.UserWidget:SetColorAndOpacity",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InColorAndOpacity",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetContent": [
+      {
+        "path": "/Script/UMG.ContentWidget:SetContent",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Content",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ExportObject | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "SetFocusToGameViewport": [
+      {
+        "path": "/Script/UMG.WidgetBlueprintLibrary:SetFocusToGameViewport",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "SetFont": [
+      {
+        "path": "/Game/Blueprints/Interfaces/BPI_PlayerBoxWidget.BPI_PlayerBoxWidget_C:SetFont",
+        "size": 96,
+        "properties": [
+          {
+            "name": "Font",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_HasGetValueTypeHash",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Inventory/BP_PlayerBox_Text.BP_PlayerBox_Text_C:SetFont",
+        "size": 96,
+        "properties": [
+          {
+            "name": "Font",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_HasGetValueTypeHash",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.TextRenderComponent:SetFont",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Value",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableText:SetFont",
+        "size": 96,
+        "properties": [
+          {
+            "name": "InFontInfo",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_Parm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableText:SetFont",
+        "size": 96,
+        "properties": [
+          {
+            "name": "InFontInfo",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_Parm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:SetFont",
+        "size": 96,
+        "properties": [
+          {
+            "name": "InFontInfo",
+            "offset": 0,
+            "size": 96,
+            "flags": "CPF_Parm | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetHeightOverride": [
+      {
+        "path": "/Script/UMG.SizeBox:SetHeightOverride",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InHeightOverride",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetHintText": [
+      {
+        "path": "/Script/UMG.EditableText:SetHintText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InHintText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableTextBox:SetHintText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableText:SetHintText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InHintText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableTextBox:SetHintText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InHintText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFocusableTextBoxWidget:SetHintText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      }
+    ],
+    "SetHorizontalAlignment": [
+      {
+        "path": "/Script/Engine.TextRenderComponent:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "Value",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BackgroundBlur:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BackgroundBlurSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Border:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BorderSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ButtonSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.GridSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.HorizontalBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.OverlaySlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScaleBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScrollBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.SizeBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.UniformGridSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.VerticalBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WidgetSwitcherSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarArea:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarAreaSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WrapBox:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WrapBoxSlot:SetHorizontalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InHorizontalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      }
+    ],
+    "SetIgnoreLookInput": [
+      {
+        "path": "/Script/Engine.Controller:SetIgnoreLookInput",
+        "size": 1,
+        "properties": [
+          {
+            "name": "bNewLookInput",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetIgnoreMoveInput": [
+      {
+        "path": "/Script/Engine.Controller:SetIgnoreMoveInput",
+        "size": 1,
+        "properties": [
+          {
+            "name": "bNewMoveInput",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetInputMode_GameOnly": [
+      {
+        "path": "/Script/UMG.WidgetBlueprintLibrary:SetInputMode_GameOnly",
+        "size": 16,
+        "properties": [
+          {
+            "name": "PlayerController",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "bFlushInput",
+            "offset": 8,
+            "size": 1,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetInputMode_UIOnlyEx": [
+      {
+        "path": "/Script/UMG.WidgetBlueprintLibrary:SetInputMode_UIOnlyEx",
+        "size": 24,
+        "properties": [
+          {
+            "name": "PlayerController",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InWidgetToFocus",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InMouseLockMode",
+            "offset": 16,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          },
+          {
+            "name": "bFlushInput",
+            "offset": 17,
+            "size": 1,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetIsChecked": [
+      {
+        "path": "/Script/UMG.CheckBox:SetIsChecked",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InIsChecked",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFocusableCheckBoxWidget:SetIsChecked",
+        "size": 2,
+        "properties": [
+          {
+            "name": "bChecked",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "bNotifyChanged",
+            "offset": 1,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetIsEnabled": [
+      {
+        "path": "/Script/MovieRenderPipelineCore.MoviePipelineExecutorJob:SetIsEnabled",
+        "size": 1,
+        "properties": [
+          {
+            "name": "bInEnabled",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/MovieRenderPipelineCore.MoviePipelineSetting:SetIsEnabled",
+        "size": 1,
+        "properties": [
+          {
+            "name": "bInEnabled",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Widget:SetIsEnabled",
+        "size": 1,
+        "properties": [
+          {
+            "name": "bInIsEnabled",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetIsMarquee": [
+      {
+        "path": "/Script/UMG.ProgressBar:SetIsMarquee",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InbIsMarquee",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetJustification": [
+      {
+        "path": "/Script/UMG.EditableText:SetJustification",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InJustification",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableTextBox:SetJustification",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InJustification",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextLayoutWidget:SetJustification",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InJustification",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      }
+    ],
+    "SetKeyboardFocus": [
+      {
+        "path": "/Script/UMG.Widget:SetKeyboardFocus",
+        "size": 0,
+        "properties": []
+      }
+    ],
+    "SetMaxDesiredWidth": [
+      {
+        "path": "/Script/UMG.SizeBox:SetMaxDesiredWidth",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InMaxDesiredWidth",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetMinDesiredWidth": [
+      {
+        "path": "/Script/UMG.SizeBox:SetMinDesiredWidth",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InMinDesiredWidth",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetNumberOfPieces": [
+      {
+        "path": "/Script/UMG.CircularThrobber:SetNumberOfPieces",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InNumberOfPieces",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Throbber:SetNumberOfPieces",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InNumberOfPieces",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ],
+    "SetPadding": [
+      {
+        "path": "/Script/UMG.BackgroundBlur:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BackgroundBlurSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Border:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BorderSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ButtonSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.GridSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.HorizontalBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.OverlaySlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScaleBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScrollBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.SizeBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.UserWidget:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.VerticalBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WidgetSwitcherSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarArea:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarAreaSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WrapBoxSlot:SetPadding",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPadding",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetPercent": [
+      {
+        "path": "/Script/UMG.ProgressBar:SetPercent",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InPercent",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageProgressMarkerWidget:SetPercent",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InPercent",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetPeriod": [
+      {
+        "path": "/Script/UMG.CircularThrobber:SetPeriod",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InPeriod",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetPersistentHudData": [
+      {
+        "path": "/Script/Voyage.VoyageBlueprintUIFunctionLibrary:SetPersistentHudData",
+        "size": 56,
+        "properties": [
+          {
+            "name": "InPlayerController",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "InKey",
+            "offset": 8,
+            "size": 8,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "NameProperty"
+          },
+          {
+            "name": "InData",
+            "offset": 16,
+            "size": 32,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 48,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      }
+    ],
+    "SetPosition": [
+      {
+        "path": "/Script/Engine.AnimSingleNodeInstance:SetPosition",
+        "size": 8,
+        "properties": [
+          {
+            "name": "InPosition",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          },
+          {
+            "name": "bFireNotifies",
+            "offset": 4,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.SkeletalMeshComponent:SetPosition",
+        "size": 8,
+        "properties": [
+          {
+            "name": "InPos",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          },
+          {
+            "name": "bFireNotifies",
+            "offset": 4,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetPosition",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPosition",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageContextMenuWidget:SetPosition",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InPosition",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReferenceParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetRadius": [
+      {
+        "path": "/Script/Engine.PointLight:SetRadius",
+        "size": 4,
+        "properties": [
+          {
+            "name": "NewRadius",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.StereoLayerShapeCylinder:SetRadius",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InRadius",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.WindDirectionalSourceComponent:SetRadius",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InNewRadius",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.CircularThrobber:SetRadius",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InRadius",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetRenderOpacity": [
+      {
+        "path": "/Script/UMG.Widget:SetRenderOpacity",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InOpacity",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetRenderScale": [
+      {
+        "path": "/Script/UMG.Widget:SetRenderScale",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Scale",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetRenderTransformPivot": [
+      {
+        "path": "/Script/UMG.Widget:SetRenderTransformPivot",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Pivot",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      }
+    ],
+    "SetScrollOffset": [
+      {
+        "path": "/Script/UMG.ScrollBox:SetScrollOffset",
+        "size": 4,
+        "properties": [
+          {
+            "name": "NewScrollOffset",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetSize": [
+      {
+        "path": "/Game/Blueprints/Interfaces/BPI_PlayerBoxWidget.BPI_PlayerBoxWidget_C:SetSize",
+        "size": 1,
+        "properties": [
+          {
+            "name": "IsSmallContainer",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Inventory/BP_PlayerBox_Text.BP_PlayerBox_Text_C:SetSize",
+        "size": 1,
+        "properties": [
+          {
+            "name": "IsSmallContainer",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.CanvasPanelSlot:SetSize",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InSize",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.HorizontalBoxSlot:SetSize",
+        "size": 8,
+        "properties": [
+          {
+            "name": "InSize",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Spacer:SetSize",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InSize",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.VerticalBoxSlot:SetSize",
+        "size": 8,
+        "properties": [
+          {
+            "name": "InSize",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_NoDestructor | CPF_NativeAccessSpecifierPublic",
+            "type": "StructProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageInventoryItem:SetSize",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Width",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          },
+          {
+            "name": "Height",
+            "offset": 4,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageOutputInventoryButtonWidget:SetSize",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Width",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          },
+          {
+            "name": "Height",
+            "offset": 4,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "SetStretch": [
+      {
+        "path": "/Script/UMG.ScaleBox:SetStretch",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InStretch",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      }
+    ],
+    "SetStretchDirection": [
+      {
+        "path": "/Script/UMG.ScaleBox:SetStretchDirection",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InStretchDirection",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      }
+    ],
+    "SetText": [
+      {
+        "path": "/Game/Blueprints/Interfaces/BPI_PlayerBoxWidget.BPI_PlayerBoxWidget_C:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Text",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/BP_InteractHintWidget.BP_InteractHintWidget_C:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Text",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Consoles/BP_OpenDoorButton.BP_OpenDoorButton_C:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Text",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Game/UI/Game/Inventory/BP_PlayerBox_Text.BP_PlayerBox_Text_C:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Text",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_BlueprintVisible | CPF_BlueprintReadOnly | CPF_Parm",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Engine.TextRenderComponent:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "Value",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableText:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableTextBox:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableText:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.MultiLineEditableTextBox:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.RichTextBlock:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_Parm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFloatingTextActor:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFloatingTextWidget:SetText",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageFocusableWidget:SetText",
+        "size": 24,
+        "properties": [
+          {
+            "name": "InText",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          },
+          {
+            "name": "InTransformPolicy",
+            "offset": 16,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      }
+    ],
+    "SetTextOverflowPolicy": [
+      {
+        "path": "/Script/UMG.EditableText:SetTextOverflowPolicy",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InOverflowPolicy",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.EditableTextBox:SetTextOverflowPolicy",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InOverflowPolicy",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.RichTextBlock:SetTextOverflowPolicy",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InOverflowPolicy",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.TextBlock:SetTextOverflowPolicy",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InOverflowPolicy",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      }
+    ],
+    "SetToolTip": [
+      {
+        "path": "/Script/PCG.PCGPin:SetToolTip",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InTooltip",
+            "offset": 0,
+            "size": 16,
+            "flags": "CPF_ConstParm | CPF_Parm | CPF_OutParm | CPF_ReferenceParm | CPF_NativeAccessSpecifierPublic",
+            "type": "TextProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Widget:SetToolTip",
+        "size": 8,
+        "properties": [
+          {
+            "name": "Widget",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          }
+        ]
+      }
+    ],
+    "SetVerticalAlignment": [
+      {
+        "path": "/Script/Engine.TextRenderComponent:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "Value",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BackgroundBlur:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BackgroundBlurSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Border:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.BorderSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ButtonSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.GridSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.HorizontalBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.OverlaySlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScaleBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.ScrollBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.SizeBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.UniformGridSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.VerticalBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WidgetSwitcherSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarArea:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WindowTitleBarAreaSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.WrapBoxSlot:SetVerticalAlignment",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVerticalAlignment",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ByteProperty"
+          }
+        ]
+      }
+    ],
+    "SetVisibility": [
+      {
+        "path": "/Script/Engine.SceneComponent:SetVisibility",
+        "size": 2,
+        "properties": [
+          {
+            "name": "bNewVisibility",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          },
+          {
+            "name": "bPropagateToChildren",
+            "offset": 1,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "BoolProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/MovieSceneTracks.MovieSceneLevelVisibilitySection:SetVisibility",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVisibility",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/UMG.Widget:SetVisibility",
+        "size": 1,
+        "properties": [
+          {
+            "name": "InVisibility",
+            "offset": 0,
+            "size": 1,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "EnumProperty"
+          }
+        ]
+      }
+    ],
+    "SetWidthOverride": [
+      {
+        "path": "/Script/UMG.SizeBox:SetWidthOverride",
+        "size": 4,
+        "properties": [
+          {
+            "name": "InWidthOverride",
+            "offset": 0,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "FloatProperty"
+          }
+        ]
+      }
+    ],
+    "TransferSlot": [
+      {
+        "path": "/Script/Voyage.VoyageBaseInventoryComponent:TransferSlot",
+        "size": 24,
+        "properties": [
+          {
+            "name": "Source",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_InstancedReference | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "SourceSlot",
+            "offset": 8,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "TargetSlot",
+            "offset": 12,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "TransferAmount",
+            "offset": 16,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          },
+          {
+            "name": "ReturnValue",
+            "offset": 20,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_OutParm | CPF_ZeroConstructor | CPF_ReturnParm | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      },
+      {
+        "path": "/Script/Voyage.VoyageOutputInventoryWidget:TransferSlot",
+        "size": 16,
+        "properties": [
+          {
+            "name": "InItem",
+            "offset": 0,
+            "size": 8,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "ObjectProperty"
+          },
+          {
+            "name": "SlotIndex",
+            "offset": 8,
+            "size": 4,
+            "flags": "CPF_Parm | CPF_ZeroConstructor | CPF_IsPlainOldData | CPF_NoDestructor | CPF_HasGetValueTypeHash | CPF_NativeAccessSpecifierPublic",
+            "type": "IntProperty"
+          }
+        ]
+      }
+    ]
+  }
+}

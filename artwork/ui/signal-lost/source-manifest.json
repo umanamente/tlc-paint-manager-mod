@@ -1,0 +1,46 @@
+{
+  "illustrationId": "signal_lost",
+  "rasterization": {
+    "background": "transparent",
+    "height": 512,
+    "input": "signal-lost.svg",
+    "method": "Render SVG directly with root output width 1024 and height 512, retaining the original viewBox. Encode transparent RGBA8 PNG with compressionLevel 9, adaptiveFiltering true, palette false.",
+    "partialAlphaPixels": 26193,
+    "quantization": "none",
+    "renderer": {
+      "libpng": "1.6.58",
+      "librsvg": "2.63.2",
+      "libvips": "8.18.7",
+      "name": "sharp",
+      "version": "0.35.5",
+      "zlib-ng": "2.3.3"
+    },
+    "width": 1024
+  },
+  "schemaVersion": 2,
+  "source": {
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "bytes": 118144,
+    "file": "signal-lost-1024.png",
+    "height": 512,
+    "mode": "RGBA",
+    "sha256": "9c01e023000726d7b828fbc165fc1e13497795c073984260629391237e55ddbe",
+    "width": 1024
+  },
+  "vectorReference": {
+    "bytes": 25249,
+    "file": "signal-lost.svg",
+    "height": 887,
+    "sha256": "7da22b31206eae96d2026d980e9c238c595243c0cf4263976b559fd07f366a03",
+    "viewBox": [
+      0,
+      0,
+      1774,
+      887
+    ],
+    "width": 1774
+  }
+}

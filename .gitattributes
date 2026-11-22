@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.lua text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.svg text eol=lf
+*.po text eol=lf
+*.pot text eol=lf
+*.png binary

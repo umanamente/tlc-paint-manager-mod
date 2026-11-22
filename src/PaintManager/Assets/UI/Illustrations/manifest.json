@@ -1,0 +1,17 @@
+{
+  "artworkSourceSha256": "480cd3456c131932f5a9ca1d68e66e815afdda35edef50a751dfd4e302e8567f",
+  "illustrations": {
+    "signal_lost": {
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bytes": 118144,
+      "file": "signal_lost.png",
+      "height": 512,
+      "sha256": "9c01e023000726d7b828fbc165fc1e13497795c073984260629391237e55ddbe",
+      "width": 1024
+    }
+  },
+  "schemaVersion": 1
+}

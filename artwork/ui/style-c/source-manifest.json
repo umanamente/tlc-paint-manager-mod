@@ -1,0 +1,83 @@
+{
+  "overrides": {
+    "learn": {
+      "source": "compact_ready"
+    },
+    "learned": {
+      "source": "compact_learned"
+    },
+    "learned_detailed": {
+      "region": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "source": "atlas"
+    },
+    "presets": {
+      "region": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "source": "atlas"
+    },
+    "ready": {
+      "source": "compact_ready"
+    },
+    "ready_detailed": {
+      "region": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "source": "atlas"
+    },
+    "refresh": {
+      "region": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "source": "atlas"
+    },
+    "star": {
+      "region": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "source": "atlas"
+    },
+    "star_filled": {
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "source": "atlas"
+    }
+  },
+  "schemaVersion": 1,
+  "source": "Transparent icon atlas and compact recipe icons.",
+  "sources": {
+    "atlas": {
+      "file": "approved-style-c-atlas.png",
+      "sha256": "0d97e0698768eb181b9b9c63329d51e0450b3801506b800f514b26eb5d71bcd2"
+    },
+    "compact_learned": {
+      "file": "approved-compact-learned.png",
+      "sha256": "39e08694038d3af7714275b51e52c1314af799afcd7f00932310fdc54bf6b619"
+    },
+    "compact_ready": {
+      "file": "approved-compact-ready.png",
+      "sha256": "fb918773e8fb56a17c38aaccf7c266751033ac92c19b186cd9ee31f0e8fe5fd1"
+    }
+  }
+}

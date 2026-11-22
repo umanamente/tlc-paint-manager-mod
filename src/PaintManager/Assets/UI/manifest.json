@@ -1,0 +1,106 @@
+{
+  "artworkSourceSha256": "10e7f618c860d11335a3231543a37767178e9aa723f41fd36c6018524c6bfbaa",
+  "depositBucketSourceSha256": "7597828b19de5ed610865b53d21b420c9e46d170dca4cc8e17a90ed3f462676d",
+  "height": 128,
+  "icons": {
+    "apply": {
+      "file": "apply.png",
+      "sha256": "04992ecb724559975be6105e60bfb779c63c181067e9bc171864e51b2e754a1e"
+    },
+    "back": {
+      "file": "back.png",
+      "sha256": "a57992364b23ca5bb34ea7e3161057ae6b63ee3fe364963805faa1339417e45b"
+    },
+    "clear": {
+      "file": "clear.png",
+      "sha256": "5468a4240c9855ce04f438b28356b21a8740efd228230dc87a6291dd5719f34a"
+    },
+    "close": {
+      "file": "close.png",
+      "sha256": "fb1de9827c437c379bf954006c35277815a4416f93c9780f275a9fe6aaa79592"
+    },
+    "debug": {
+      "file": "debug.png",
+      "sha256": "596bd10ca8bddd2c2b08e254a015127062e63e28470454aa2547dc40f8488330"
+    },
+    "delete": {
+      "file": "delete.png",
+      "sha256": "850009354660138b44409a78512af092b8d0ae8abb31dd7704562401a1acd7ee"
+    },
+    "deposit_bucket": {
+      "file": "deposit_bucket.png",
+      "sha256": "63a23bdca0f97f14ccf416e6582c9685bf8c48080d1327558541f10261fbd71f"
+    },
+    "import": {
+      "file": "import.png",
+      "sha256": "05aa859d4646c20a9843d2cf44901dda6c6af63ed83d48e1c902d09b625668ac"
+    },
+    "learn": {
+      "file": "learn.png",
+      "sha256": "eb87c4053671676ec5ce0fa6fbc3eac3f8a6cf754d067d12b7240bbd49e125f6"
+    },
+    "learned": {
+      "file": "learned.png",
+      "sha256": "087330ba24295fe38834668b86def699c8c74896117a0c2b72f82e92da3d458c"
+    },
+    "learned_detailed": {
+      "file": "learned_detailed.png",
+      "sha256": "2a8d3dfdf423d00554782cf0934a386b4f2b5aea023e1482e69d769a5b8bda85"
+    },
+    "missing": {
+      "file": "missing.png",
+      "sha256": "3ecfa1677e2da48c57471b81f8deca7f272d347575eab021bf03ecd87d1c481b"
+    },
+    "presets": {
+      "file": "presets.png",
+      "sha256": "c294f177193c6f9ceae41864aaab1e66141a424998c1d4ba120ac4d070422247"
+    },
+    "ready": {
+      "file": "ready.png",
+      "sha256": "eb87c4053671676ec5ce0fa6fbc3eac3f8a6cf754d067d12b7240bbd49e125f6"
+    },
+    "ready_detailed": {
+      "file": "ready_detailed.png",
+      "sha256": "a9847316351d402759189599961df5c0bfdb01b0ac8f856ee8cfbe5665c33a58"
+    },
+    "refresh": {
+      "file": "refresh.png",
+      "sha256": "3a36a807eae2350d04da985cf97869c4e26aba1dd5bd85d340eba9441724f56b"
+    },
+    "save": {
+      "file": "save.png",
+      "sha256": "d634f4038db7106ca50d4d299cc913c7ee6a9dc1f78a16eda5304f3298021ba4"
+    },
+    "search": {
+      "file": "search.png",
+      "sha256": "fddaadcd040fa06c29a69694f39ac5285bb963be02a0a4765b76b467d9799e97"
+    },
+    "settings": {
+      "file": "settings.png",
+      "sha256": "9cddf086b9fbb5ec793d5883e31e6284f2aab6ca3e2e75b0fda316cf511aaa26"
+    },
+    "sort": {
+      "file": "sort.png",
+      "sha256": "64610aa2a2989796773ec9e49e1ff91910900e8a780ea60fdfcc3767abdbf95b"
+    },
+    "star": {
+      "file": "star.png",
+      "sha256": "7476cd9a7336b3ce97610abce9b210715b9528db95ad6fa3b686a0f0e196f5a8"
+    },
+    "star_filled": {
+      "file": "star_filled.png",
+      "sha256": "cd8445ecb8939e6df247924f6da0b39d63647df7a27b4af6c9f664afc6af8975"
+    },
+    "to_backpack": {
+      "file": "to_backpack.png",
+      "sha256": "612cfee1965582e52abffcc099f586b06cdc24123d1fa0a50e0b0d2f97ca3f51"
+    },
+    "to_box": {
+      "file": "to_box.png",
+      "sha256": "f40ee49885937d032fd4927c1d84882a4382be25d7e6939de58a65d95ea919cd"
+    }
+  },
+  "schemaVersion": 1,
+  "source": "Original geometric controls, approved style C artwork and the Lucide paint bucket",
+  "width": 128
+}

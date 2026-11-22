@@ -1,6 +1,6 @@
 -- UI, diagnostics and explicitly requested learning/preset workflow defaults.
 return {
-    version = "0.2.0",
+    version = "0.2.1",
     selected_backpack_target = require("paintmanager.transfer_quantity").default,
     reference_build = "25982825",
     -- Stock discovery and the UI connection share the ship actor position.

@@ -1,6 +1,6 @@
 {
   "id": "PaintManager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "stage": "paint-inventory-and-presets",
   "gameAppId": "1783560",
   "referenceGameBuild": "25982825",

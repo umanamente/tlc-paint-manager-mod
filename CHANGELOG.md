@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+### Bug Fixes
+
+* **ui:** use an original paint can icon for Deposit all paints ([a36cb2d](https://github.com/umanamente/tlc-paint-manager-mod/commit/a36cb2d04a06475678f174ac2961d7e0bc785995))
+
 ## 0.2.0
 
 First public release snapshot.
